@@ -9,7 +9,7 @@ export const ScrollProvider = ({ children }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const targetSection = document.querySelector(".CSRight ");
+      const targetSection = document.querySelector(".GalleriaSection ");
       if (targetSection) {
         const sectionTop = targetSection.getBoundingClientRect().top;
         setHeaderVisible(sectionTop < window.innerHeight && sectionTop >= -1000);

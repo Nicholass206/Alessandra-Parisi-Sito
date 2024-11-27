@@ -31,7 +31,7 @@ body,
   width: 100%;
   z-index: 10;
   background-color: transparent;
-
+  backdrop-filter: blur(2px);
  
 }
 
@@ -103,7 +103,7 @@ body,
 .HeroContainer span{
   color: white;
   font-size: 1.3rem;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -121,7 +121,6 @@ body,
 
 .ChiSonoSection .container{
   height: 100%;
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   padding: 100px 40px;
@@ -149,4 +148,46 @@ font-size: 3rem;
   font-size: 1.3rem;
   color:#705936;
   font-weight: 400;
+}
+
+
+
+/*Galleria Section*/
+.GalleriaSection{
+
+}
+
+.GalleriaSection .container{
+  height: 100%;
+  padding: 100px 40px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.GalleriaText{
+  color:#705936;
+  font-size: 3rem;
+}
+
+.GalleriaSection .container p{
+  font-size: 1.3rem;
+  color:#705936;
+}
+
+.IconsContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.IconsContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.Categories{
+  height: 200px;
+  padding: 10px;
+  width: 100%;
+  object-fit: cover;
 }
