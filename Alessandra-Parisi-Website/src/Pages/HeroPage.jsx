@@ -47,21 +47,27 @@ export default function HeroPage() {
                 <div className="IconsContainer row">
                     <div className="col-4 p-0">
                     <img src={Category1} alt="" className='Categories'/>
+                    <h3 className='CategoryName Rox'>Il Cristo</h3>
                     </div>
                     <div className="col-4 p-0">
                     <img src={Category2} alt="" className='Categories'/>
+                    <h3 className='CategoryName Rox'>Altre Icone</h3>
                     </div>
                     <div className="col-4 p-0">
                     <img src={Category3} alt="" className='Categories'/>
+                    <h3 className='CategoryName Rox'>Angeli</h3>
                     </div>
                     <div className="col-4 p-0">
                     <img src={Category4} alt="" className='Categories'/>
+                    <h3 className='CategoryName Rox'>Madre di Dio</h3>
                     </div>
                     <div className="col-4 p-0">
                     <img src={Category5} alt="" className='Categories'/>
+                    <h3 className='CategoryName Rox'>Santi</h3>
                     </div>
                     <div className="col-4 p-0">
                     <img src={Category6} alt="" className='Categories'/>
+                    <h3 className='CategoryName Rox'>Le Feste</h3>
                     </div> 
                 </div>
             </div>
