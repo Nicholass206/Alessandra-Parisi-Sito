@@ -1,16 +1,25 @@
 import Header from './components/Header'
 import './App.css'
 import { Route, Routes } from "react-router-dom"
+import HeroPage from './Pages/HeroPage'
+import '../src/fonts/Roxborough.ttf';
+import ChiSono from './Pages/ChiSono';
+import { ScrollProvider } from '../src/Pages/ScrollContext';
 
 function App() {
   
 
   return (
     <>
-      <Routes>
-      </Routes>
-      <Header/>
-      <h1 style={{color:"black"}}>Hello Nune</h1>
+ 
+    
+    <ScrollProvider>
+    <Header/>
+    <HeroPage/>
+    <ChiSono/>
+    </ScrollProvider>
+    
+      
     </>
   )
 }

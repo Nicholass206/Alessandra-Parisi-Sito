@@ -5,43 +5,37 @@ body{
 body,
 #root{
  min-height: 100vh;
- overflow: hidden;
+ 
 }
 
-
-
-/*Spectral Font Weights*/
-.spectral-medium {
-  font-family: "Spectral", serif;
-  font-weight: 500;
-  font-style: normal;
+.container{
+  max-width: 1350px;
 }
 
-.spectral-semibold {
-  font-family: "Spectral", serif;
-  font-weight: 600;
-  font-style: normal;
+@font-face {
+  font-family: "Roxborough";
+  src: local("Roxborough"),
+   url("./fonts/Roxborough.ttf") format("truetype");
+  
+ }
+ 
+.Rox{
+  font-family: "Roxborough";
 }
-
-.spectral-bold {
-  font-family: "Spectral", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.spectral-extrabold {
-  font-family: "Spectral", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-
 
 /*Header CSS*/
 .HeaderSection{
-  padding: 20px;
+  padding: 10px 20px;
   background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+
+ 
 }
+
+
 
 .HeaderList{
   list-style: none;
@@ -49,6 +43,8 @@ body,
   flex-direction: row;
   justify-content: space-between;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0;
 }
 
 .HeaderLink{
@@ -56,8 +52,101 @@ body,
   padding: 10px 30px;
   border-radius: 9999px;
   transition: all 0.3s ease-in-out;
+  color: white;
+  
+
 }
 
-.HeaderLink:hover{
+.hover-white:hover{
+  color: white !important;
   background-color: #705936;
+}
+
+.hover-brown:hover{
+  color: #705936 !important;
+  background-color: white;
+}
+
+
+
+
+
+
+/*Hero CSS*/
+.HeroSection{
+  height: 100vh;
+  background-image: url('/public/assets/images/church.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -50px ;
+  z-index: 2;
+}
+
+.HeroContainer{
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+
+}
+
+.HeroSection h1{
+  color: white;
+  font-size: 6rem;
+  max-width: 700px;
+  text-align: center;
+}
+
+.HeroContainer span{
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+}
+
+
+
+/*ChiSono CSS*/
+
+.ChiSonoSection{
+  background-color: #f1eee8;
+  height: 100vh;
+}
+
+.ChiSonoSection .container{
+  height: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 40px;
+}
+
+.CSLeft{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ChiSonoSection .container h2{
+color:#705936;
+font-size: 3rem;
+
+}
+
+.ProfileImage{
+  height: 400px;
+  width: 450px;
+}
+
+.CSRight p{
+  padding-top: 70px;
+  font-size: 1.3rem;
+  color:#705936;
+  font-weight: 400;
 }
