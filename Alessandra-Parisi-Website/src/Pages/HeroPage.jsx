@@ -4,14 +4,14 @@ import Category2 from '/assets/images/Altre_Icone.jpg'
 import Category3 from '/assets/images/Angeli.jpg'
 import Category4 from '/assets/images/Madre_di_Dio.jpg'
 import Category5 from '/assets/images/Santi.jpg'
-import Category6 from '/assets/images/Le_Feste.jpg'
+import Category6 from '/assets/images/Le_Feste.jpg' 
 
 export default function HeroPage() {
 
 
     return(
       <div>
-         <div className="HeroSection">
+         <div className="HeroSection"> 
             <div className="HeroContainer container">
                 <h1 className="Rox">Passione per il colore</h1>
                 <span >Alessandra parisi</span>

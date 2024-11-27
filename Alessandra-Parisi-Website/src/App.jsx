@@ -10,15 +10,10 @@ function App() {
 
   return (
     <>
- 
-    
     <ScrollProvider>
-    <Header/>
-    <HeroPage/>
-
+      <Header/>
+      <HeroPage/>
     </ScrollProvider>
-    
-      
     </>
   )
 }
