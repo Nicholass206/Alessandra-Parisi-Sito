@@ -1,42 +1,220 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  background-color: white;
+}
+
+body,
+#root{
+ min-height: 100vh;
+ 
+}
+
+.container{
+  max-width: 1350px;
+}
+
+@font-face {
+  font-family: "Roxborough";
+  src: local("Roxborough"),
+   url("./fonts/Roxborough.ttf") format("truetype");
+  
+ }
+ 
+.Rox{
+  font-family: "Roxborough";
+}
+
+/*Header CSS*/
+.HeaderSection{
+  padding: 10px 20px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+ 
+}
+
+
+
+.HeaderList{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0;
+}
+
+.HeaderLink{
+  font-weight: 700 !important;
+  padding: 10px 30px;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  
+
+}
+
+.hover-white:hover{
+  color: white !important;
+  background-color: #705936;
+}
+
+.hover-brown:hover{
+  color: #705936 !important;
+  background-color: white;
+}
+
+
+
+
+
+
+/*Hero CSS*/
+.HeroSection{
+  height: 100vh;
+  background-image: url('/public/assets/images/church.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -50px ;
+  z-index: 2;
+}
+
+.HeroContainer{
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+
+}
+
+.HeroSection h1{
+  color: white;
+  font-size: 6rem;
+  max-width: 700px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.HeroContainer span{
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0px 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/*ChiSono CSS*/
+
+.ChiSonoSection{
+  background-color: #f1eee8;
+  height: 100vh;
+}
+
+.ChiSonoSection .container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 40px;
+}
+
+.CSLeft{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ChiSonoSection .container h2{
+color:#705936;
+font-size: 3rem;
+
+}
+
+.ProfileImage{
+  height: 400px;
+  width: 450px;
+}
+
+.CSRight p{
+  padding-top: 70px;
+  font-size: 1.3rem;
+  color:#705936;
+  font-weight: 400;
+}
+
+
+
+/*Galleria Section*/
+.GalleriaSection{
+
+}
+
+.GalleriaSection .container{
+  height: 100%;
+  padding: 100px 40px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.GalleriaText{
+  color:#705936;
+  font-size: 3rem;
+}
+
+.GalleriaSection .container p{
+  font-size: 1.3rem;
+  color:#705936;
+}
+
+.IconsContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.IconsContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.IconsContainer .col-4{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Categories{
+  height: 200px;
+  padding: 10px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.CategoryName{
+  position: absolute;
+  display: none;
+  color: white;
+  font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.IconsContainer .col-4:hover .CategoryName{
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.Categories:hover {
+  filter: brightness(50%) ;
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
