@@ -1,10 +1,10 @@
-import ProfilePhoto from '/assets/images/ritratto2.jpg'
-import Category1 from '/assets/images/Il_Cristo.jpg'
-import Category2 from '/assets/images/Altre_Icone.jpg'
-import Category3 from '/assets/images/Angeli.jpg'
-import Category4 from '/assets/images/Madre_di_Dio.jpg'
-import Category5 from '/assets/images/Santi.jpg'
-import Category6 from '/assets/images/Le_Feste.jpg' 
+import ProfilePhoto from '../../public/assets/images/ritratto2.jpg'
+import Category1 from '../../public/assets/images/Il_Cristo.jpg'
+import Category2 from '../../public/assets/images/Altre_Icone.jpg'
+import Category3 from '../../public/assets/images/Angeli.jpg'
+import Category4 from '../../public/assets/images/Madre_di_Dio.jpg'
+import Category5 from '../../public/assets/images/Santi.jpg'
+import Category6 from '../../public/assets/images/Le_Feste.jpg' 
 
 export default function HeroPage() {
 
