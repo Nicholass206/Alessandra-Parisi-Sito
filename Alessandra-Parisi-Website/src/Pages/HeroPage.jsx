@@ -11,6 +11,7 @@ export default function HeroPage() {
 
     return(
       <div>
+        
          <div className="HeroSection"> 
             <div className="HeroContainer container">
                 <h1 className="Rox">Passione per il colore</h1>
@@ -45,31 +46,31 @@ export default function HeroPage() {
                 Le immagini sacre sono dipinte perché possano dare ai fedeli in preghiera la possibilità di entrare in comunione con il loro “archetipo”.
                 </p>
                 <div className="IconsContainer row">
-                    <div className="col-4 p-0">
-                    <img src={Category1} alt="" className='Categories'/>
-                    <h3 className='CategoryName Rox'>Il Cristo</h3>
+                    <Link to="/il-cristo" className="col-4 p-0">
+                        <img src={Category1} alt="Il Cristo" className="Categories" />
+                        <h3 className="CategoryName Rox">Il Cristo</h3>
+                    </Link>
+                    <Link to="/altre-icone" className="col-4 p-0">
+                        <img src={Category2} alt="Altre Icone" className="Categories" />
+                        <h3 className="CategoryName Rox">Altre Icone</h3>
+                    </Link>
+                    <Link to="/angeli" className="col-4 p-0">
+                        <img src={Category3} alt="Angeli" className="Categories" />
+                        <h3 className="CategoryName Rox">Angeli</h3>
+                    </Link>
+                    <Link to="/madre-di-dio" className="col-4 p-0">
+                        <img src={Category4} alt="Madre di Dio" className="Categories" />
+                        <h3 className="CategoryName Rox">Madre di Dio</h3>
+                    </Link>
+                    <Link to="/santi" className="col-4 p-0">
+                        <img src={Category5} alt="Santi" className="Categories" />
+                        <h3 className="CategoryName Rox">Santi</h3>
+                    </Link>
+                    <Link to="/le-feste" className="col-4 p-0">
+                        <img src={Category6} alt="Le Feste" className="Categories" />
+                        <h3 className="CategoryName Rox">Le Feste</h3>
+                    </Link>
                     </div>
-                    <div className="col-4 p-0">
-                    <img src={Category2} alt="" className='Categories'/>
-                    <h3 className='CategoryName Rox'>Altre Icone</h3>
-                    </div>
-                    <div className="col-4 p-0">
-                    <img src={Category3} alt="" className='Categories'/>
-                    <h3 className='CategoryName Rox'>Angeli</h3>
-                    </div>
-                    <div className="col-4 p-0">
-                    <img src={Category4} alt="" className='Categories'/>
-                    <h3 className='CategoryName Rox'>Madre di Dio</h3>
-                    </div>
-                    <div className="col-4 p-0">
-                    <img src={Category5} alt="" className='Categories'/>
-                    <h3 className='CategoryName Rox'>Santi</h3>
-                    </div>
-                    <div className="col-4 p-0">
-                    <img src={Category6} alt="" className='Categories'/>
-                    <h3 className='CategoryName Rox'>Le Feste</h3>
-                    </div> 
-                </div>
             </div>
         </div>
       </div>
