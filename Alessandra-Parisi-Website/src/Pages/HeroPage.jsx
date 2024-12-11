@@ -86,12 +86,12 @@ export default function HeroPage() {
 
         <div id ="ceri-pasquali" className="CeriPasquali">
             <div className=" CeriPasqualiContainer container"> 
-                 <h1 className="CeriPasqualiText text-center Rox">Ceri Pasquali</h1>
+                 <h2 className="CeriPasqualiText text-center Rox">Ceri Pasquali</h2>
                      <div className="items-container">
                              {CeriPasquali.map((item,index) => (
                         <div key={index} className="item">
                              <img src={item.image} alt={item.title} className="item-image" />
-                         <h2 className="item-title Rox">{item.title}</h2>
+                         <h3 className="item-title Rox">{item.title}</h3>
                              <p className="item-description">{item.description}</p>
                         </div>
                              ))}
@@ -123,60 +123,60 @@ In alcuni casi ho messo le mie mani al servizio di idee altrui cercando di inter
                 </div>
             </div>
          </div>
-         <div id="mostre" className="mostreSection">
-  <div className="container mostreContainer">
-    <h1 className="Rox text-center mostreText">Mostre</h1>
-    <h6 className="text-center Rox">La voce dell’icona è voce della chiesa.</h6>
-    <p className="text-center Rox">
-      Ho tentato di diffondere questo messaggio attraverso alcune esposizioni in luoghi e contesti diversi.
-    </p>
-    <div className="mostreIcons">
-      <div className="mostreItem Row col-4">
-        <Link to="/spiritualita-e-colori" className="col-4 p-0">
-          <img src={Spiritualita} alt="Spiritualita-e-Colori" className="Categories" />
-        </Link>
-        <div className="mostreContent">
-          <h3 className="CategoryName Rox">Spiritualita e colori</h3>
+      <div id="mostre" className="mostreSection">
+        <div className="container mostreContainer">
+          <h1 className="Rox text-center mostreText">Mostre</h1>
+          <h6 className="text-center Rox">La voce dell’icona è voce della chiesa.</h6>
+          <p className="text-center Rox">
+            Ho tentato di diffondere questo messaggio attraverso alcune esposizioni in luoghi e contesti diversi.
+          </p>
+          <div className="mostreIcons row">
+            <div className="mostreItem col-4">
+              <Link to="/spiritualita-e-colori" className="col-4 p-0">
+                <img src={Spiritualita} alt="Spiritualita-e-Colori" className="Categories" />
+              </Link>
+              <div className="mostreContent">
+                <h3 className="CategoryName Rox">Spiritualita e colori</h3>
+              </div>
+            </div>
+            <div className="mostreItem  col-4">
+              <div className="mostreContent">
+                <h3 className="CategoryName Rox">Libreria Traspontina a Roma</h3>
+              </div>
+              <Link to="/libreria-traspontina" className=" p-0">
+                <img src={LibreriaTraspontina} alt="Libreria Traspontina a Roma" className="Categories" />
+              </Link>
+            </div>
+            <div className="mostreItem  col-4">
+              <Link to="/libreria-palermo" className=" p-0">
+                <img src={LibreriaPalermo} alt="Decori" className="Categories" />
+              </Link>
+              <div className="mostreContent">
+                <h3 className="CategoryName Rox">Libreria Universitas a Palermo</h3>
+              </div>
+            </div>
+            <div className="mostreItem  col-4">
+              <div className="mostreContent">
+                <h3 className="CategoryName Rox">Bambusa Garden</h3>
+              </div>
+              <Link to="/bambusa" className=" p-0">
+                <img src={Bambusa} alt="Decori" className="Categories" />
+              </Link>
+            </div>
+            <div className="mostreItem  col-4">
+              <Link to="/la-luce" className=" p-0">
+                <img src={Laluce} alt="Decori" className="Categories" />
+              </Link>
+              <div className="mostreContent">
+                <h3 className="CategoryName Rox">Condividere per comunicare – La Luce delle Icone</h3>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="mostreItem Row col-4">
-        <div className="mostreContent">
-          <h3 className="CategoryName Rox">Libreria Traspontina a Roma</h3>
-        </div>
-        <Link to="/libreria-traspontina" className="col-4 p-0">
-          <img src={LibreriaTraspontina} alt="Libreria Traspontina a Roma" className="Categories" />
-        </Link>
-      </div>
-      <div className="mostreItem Row col-4">
-        <Link to="/libreria-palermo" className="col-4 p-0">
-          <img src={LibreriaPalermo} alt="Decori" className="Categories" />
-        </Link>
-        <div className="mostreContent">
-          <h3 className="CategoryName Rox">Libreria Universitas a Palermo</h3>
-        </div>
-      </div>
-      <div className="mostreItem Row col-4">
-        <div className="mostreContent">
-          <h3 className="CategoryName Rox">Bambusa Garden</h3>
-        </div>
-        <Link to="/bambusa" className="col-4 p-0">
-          <img src={Bambusa} alt="Decori" className="Categories" />
-        </Link>
-      </div>
-      <div className="mostreItem Row col-4">
-        <Link to="/la-luce" className="col-4 p-0">
-          <img src={Laluce} alt="Decori" className="Categories" />
-        </Link>
-        <div className="mostreContent">
-          <h3 className="CategoryName Rox">Condividere per comunicare – La Luce delle Icone</h3>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <div id ="appunti" className="appuntiSection">
   <div className="container appuntiContainer">
-    <h1 className="text-center Rox">Appunti</h1>
+    <h2 className="text-center Rox">Appunti</h2>
     <h6 className="text-center Rox" >Condivido volentieri qualche breve appunto tratto da vari testi e seminari; sono pronta a dialogare con chi lo desidera, e ad apprendere da chi mi può insegnare.</h6>
   </div>
 </div>

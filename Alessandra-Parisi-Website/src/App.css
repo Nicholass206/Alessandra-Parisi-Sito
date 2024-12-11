@@ -227,14 +227,12 @@ font-size: 3rem;
 }
 
 
-.ceri-pasquali {
-  padding: 100px;
-  background-color: #e9d7b6;
+.CeriPasquali {
+  padding-bottom: 100px;
 }
 
 .CeriPasqualiText {
   font-size: 3rem;
-  /* margin-bottom: 30px; */
   color: #705936; 
 }
 
@@ -244,15 +242,14 @@ font-size: 3rem;
   justify-content: end;
   align-items: center;
   flex-direction: column;
-  gap: 80px;
-  margin-top: 220px;
+  gap: 40px;
+
 }
 
 .items-container {
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-top: 20px;
 }
 
 .item {
@@ -260,13 +257,11 @@ font-size: 3rem;
   text-align: center;
   background-color: #f1eee8;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .item-image {
   width: 100%;
-  border-radius: 8px;
   margin-bottom: 15px;
 }
 
@@ -290,20 +285,23 @@ font-size: 3rem;
   background-repeat: no-repeat;
   background-position-y: -50px ;
   z-index: 2;
-  margin-top: 170px;
-  padding-bottom: 150px;
+
+}
+
+.coloriInAltreFormeSection{
+ height: 100%;
+ padding-block: 100px;
 }
 
 .coloriInAltreFormeText {
   color: #f1eee8;
-  font-size: 4rem;
-  padding-top: 100px;
+  font-size: 3rem;
 
 }
 
 .coloriInAltreFormeSection p{
   color:#f1eee8;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
 }
 
@@ -313,12 +311,12 @@ font-size: 3rem;
   justify-content: end;
   align-items: center;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 
 
 .mostreSection{
-  padding: 50px;
+  padding-block: 80px;
   background-color: #f1eee8;
 
 }
@@ -326,7 +324,6 @@ font-size: 3rem;
 .mostreText{
   color: #705936;
   font-size: 3rem;
-  padding-top:100px ;
 
 }
 .mostreSection h6{
@@ -345,43 +342,52 @@ font-size: 3rem;
   justify-content: end;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .mostreIcons {
-  flex-wrap: wrap;
-  gap: 24px; /* Slightly increase the gap for a more spacious layout */
-  position: relative;
-  justify-content: center; /* Center the rows */
-  align-items: center; /* Align items vertically */
   display: flex;
-}
-
-.mostreIcons .col-4 {
-  flex: 0 0 calc(30% - 20px); /* Increase the width of each item */
-  max-width: calc(30% - 20px); /* Ensure consistent sizing */
-}
-
-.mostreIcons .col-4:nth-child(4),
-.mostreIcons .col-4:nth-child(5) {
-  flex: 0 0 calc(45% - 20px); /* Increase width for the last two items */
-  max-width: calc(45% - 20px);
+  justify-content: center;
 }
 
 .mostreIcons .col-4 img {
-  width: 100%; /* Ensure images stretch to fit the container */
-  height: auto; /* Maintain aspect ratio */
+
+  height:200px;
 }
+
+
 
 .appuntiSection{
   background-image:url('/public/assets/images/appunti.png') ;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -50px ;
+  background-position-x:-100px ;
   z-index: 2;
-  margin-top: 170px;
-  padding-bottom: 150px;
+  height: 80vh;
+
+}
+
+.appuntiSection .container{
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.appuntiSection h2{
+  font-size: 3rem !important;
+  color: #705936;
+}
+
+.appuntiSection h6{
+  color: #705936;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 950px;
+  padding-top: 50px;
+  letter-spacing: 1px;
 }
 
 

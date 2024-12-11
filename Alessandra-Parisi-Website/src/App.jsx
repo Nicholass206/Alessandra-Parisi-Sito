@@ -30,12 +30,3 @@ function App() {
 
 export default App;
 
-
-/*
-
-<Route path="/altre-icone" element={<AltreIcone />} />
-<Route path="/angeli" element={<  />} />
-<Route path="/madre-di-dio" element={<MadreDiDio />} />
-<Route path="/santi" element={<Santi />} />
-<Route path="/le-feste" element={<LeFeste />} /> 
-*/
