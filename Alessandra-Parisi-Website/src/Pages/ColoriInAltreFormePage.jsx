@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import categories from "../data/Categories.js";
+import coloriInAltreForme from '../data/ColoriInAltreforme.js';
 
-function CategoryPage() {
-  const { categoryPath } = useParams();
-  const [category, setCategory] = useState(null);
+function ColoriInAltreFormePage() {
+  const { coloriPath } = useParams();
+  const [colori, setColori] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const foundCategory = categories.find((cat) => cat.path === `/${categoryPath}`);
-    setCategory(foundCategory);
-  }, [categoryPath]); 
+    const foundColori = coloriInAltreForme.find((col) => col.path === `/${coloriPath}`);
+    setColori(foundColori);
+  }, [coloriPath]);  
 
-  if (!category) {
+  if (!colori) {
     return <div></div>;  
   }
 
@@ -30,10 +30,9 @@ function CategoryPage() {
   return (
     <div className="CategoryPageSection">
       <div className="container">
-        <h1 className="Rox">{category.headLine}</h1>
-        <p>{category.description}</p>
+        <h1 className="Rox">{colori.title}</h1>
         <div className="images row">
-          {category.images.map((image, index) => (
+          {colori.images.map((image, index) => (
             <div
               key={index}
               className="image-item col-3"
@@ -61,4 +60,4 @@ function CategoryPage() {
   );
 }
 
-export default CategoryPage;
+export default ColoriInAltreFormePage;

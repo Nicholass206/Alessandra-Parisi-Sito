@@ -1,5 +1,9 @@
 body{
   background-color: white;
+  
+}
+html{
+  scroll-behavior: smooth;
 }
 
 body,
@@ -57,6 +61,10 @@ body,
 
 }
 
+.HeaderSection a{
+  text-decoration: none;
+}
+
 .hover-white:hover{
   color: white !important;
   background-color: #705936;
@@ -90,7 +98,6 @@ body,
   align-items: center;
   flex-direction: column;
   gap: 80px;
-
 }
 
 .HeroSection h1{
@@ -220,5 +227,161 @@ font-size: 3rem;
 }
 
 
+.ceri-pasquali {
+  padding: 100px;
+  background-color: #e9d7b6;
+}
+
+.CeriPasqualiText {
+  font-size: 3rem;
+  /* margin-bottom: 30px; */
+  color: #705936; 
+}
+
+.CeriPasqualiContainer {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 220px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.item {
+  width: 300px;
+  text-align: center;
+  background-color: #f1eee8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  color: #705936; 
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #705936;
+}
+
+.coloriInAltreFormeSection{
+  background-image:url('/public/assets/images/Colori In Altre Forme.jpg') ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -50px ;
+  z-index: 2;
+  margin-top: 170px;
+  padding-bottom: 150px;
+}
+
+.coloriInAltreFormeText {
+  color: #f1eee8;
+  font-size: 4rem;
+  padding-top: 100px;
+
+}
+
+.coloriInAltreFormeSection p{
+  color:#f1eee8;
+  font-size: 1.5rem;
+
+}
+
+.coloriInAltreFormeContainer{
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+
+.mostreSection{
+  padding: 50px;
+  background-color: #f1eee8;
+
+}
+
+.mostreText{
+  color: #705936;
+  font-size: 3rem;
+  padding-top:100px ;
+
+}
+.mostreSection h6{
+  color: #705936;
+  font-size: 1.5rem;
+}
+
+.mostreSection p{
+  color: #705936;
+  font-size: 1rem;
+}
+
+.mostreContainer{
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mostreIcons {
+  flex-wrap: wrap;
+  gap: 24px; /* Slightly increase the gap for a more spacious layout */
+  position: relative;
+  justify-content: center; /* Center the rows */
+  align-items: center; /* Align items vertically */
+  display: flex;
+}
+
+.mostreIcons .col-4 {
+  flex: 0 0 calc(30% - 20px); /* Increase the width of each item */
+  max-width: calc(30% - 20px); /* Ensure consistent sizing */
+}
+
+.mostreIcons .col-4:nth-child(4),
+.mostreIcons .col-4:nth-child(5) {
+  flex: 0 0 calc(45% - 20px); /* Increase width for the last two items */
+  max-width: calc(45% - 20px);
+}
+
+.mostreIcons .col-4 img {
+  width: 100%; /* Ensure images stretch to fit the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.appuntiSection{
+  background-image:url('/public/assets/images/appunti.png') ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -50px ;
+  z-index: 2;
+  margin-top: 170px;
+  padding-bottom: 150px;
+}
 
 

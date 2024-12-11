@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import categories from "../data/Categories.js";
+import Mostre from "../data/Mostre.js";
 
-function CategoryPage() {
-  const { categoryPath } = useParams();
-  const [category, setCategory] = useState(null);
+
+function MostrePage() {
+  const { mostrePath } = useParams();
+  const [mostre, setmostre] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const foundCategory = categories.find((cat) => cat.path === `/${categoryPath}`);
-    setCategory(foundCategory);
-  }, [categoryPath]); 
+    const foundMostre = Mostre.find((col) => col.path === `/${mostrePath}`);
+    setmostre(foundMostre);
+  }, [mostrePath]);  
 
-  if (!category) {
+  if (!mostre) {
     return <div></div>;  
   }
 
@@ -30,10 +31,10 @@ function CategoryPage() {
   return (
     <div className="CategoryPageSection">
       <div className="container">
-        <h1 className="Rox">{category.headLine}</h1>
-        <p>{category.description}</p>
+        <h1 className="Rox">{mostre.title}</h1>
+        <p className="Rox">{mostre.description}</p>
         <div className="images row">
-          {category.images.map((image, index) => (
+          {mostre.images.map((image, index) => (
             <div
               key={index}
               className="image-item col-3"
@@ -61,4 +62,4 @@ function CategoryPage() {
   );
 }
 
-export default CategoryPage;
+export default MostrePage;
