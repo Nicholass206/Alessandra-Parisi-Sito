@@ -1,10 +1,9 @@
-
 const coloriInAltreForme = 
 [
     {
         id:1,
-        title:"Lampade",
         path:"/lampade",
+        title:"Lampade",
         images : [
             
             {src:"/public/assets/images/lampade/la leggerezza.jpg",title:"Leggerezza"},
@@ -25,8 +24,8 @@ const coloriInAltreForme =
     },
     {
         id:2,
-        title:"Soggeti Per Bambini",
         path:"/soggeti-per-bambini",
+        title:"Soggeti Per Bambini",
         images :[
             {src:"/public/assets/images/soggetti/Coniglio.jpg",title:"Coniglio"},
             {src:"/public/assets/images/soggetti/Cucciolo.jpg",title:"Cucciolo"},
@@ -40,8 +39,8 @@ const coloriInAltreForme =
     },
     {
         id:3,
-        title:"Decori",
         path:"/decori",
+        title:"Decori",
         images: [
             {src:"/public/assets/images/decori/acquarello 1.jpg",title:"Acquarello "},
             {src:"/public/assets/images/decori/greca su legno.jpg",title:"Greca su legno"},

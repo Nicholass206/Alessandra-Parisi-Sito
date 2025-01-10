@@ -14,6 +14,9 @@ body,
 
 .container{
   max-width: 1350px;
+  /* animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 20%; */
 }
 
 @font-face {
@@ -21,6 +24,17 @@ body,
   src: local("Roxborough"),
    url("./fonts/Roxborough.ttf") format("truetype");
   
+ }
+
+ @keyframes appear{
+    from{
+      opacity: 0;
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+    }
  }
  
 .Rox{
@@ -100,12 +114,47 @@ body,
   gap: 80px;
 }
 
-.HeroSection h1{
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+.HeroSection h1 {
   color: white;
   font-size: 6rem;
   max-width: 700px;
   text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  animation: typing 4s steps(30, end), blink 0.5s step-end infinite 4s;
+  border-right: 3px solid white;
 }
+
+
+
+
+
+/* Stop blinking cursor after animation */
+.HeroSection h1.animated {
+  animation: none;
+  border-right: none;
+}
+
+
+
 
 .HeroContainer span{
   color: white;
@@ -120,51 +169,95 @@ body,
 
 
 /*ChiSono CSS*/
-
-.ChiSonoSection{
+.ChiSonoSection {
   background-color: #f1eee8;
   height: 100vh;
 }
 
-.ChiSonoSection .container{
+.ChiSonoSection .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 100px 40px;
 }
 
-.CSLeft{
+.CSLeft {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.ChiSonoSection .container h2{
-color:#705936;
-font-size: 3rem;
-
+.ChiSonoSection .container h2 {
+  color: #705936;
+  font-size: 3rem;
 }
 
-.ProfileImage{
+.ProfileImage {
   height: 400px;
   width: 450px;
 }
 
-.CSRight p{
+.CSRight p {
   padding-top: 70px;
   font-size: 1.3rem;
-  color:#705936;
+  color: #705936;
   font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+  .ChiSonoSection {
+    height: auto; 
+    padding: 50px 20px; 
+  }
+
+  .ChiSonoSection .container {
+    padding: 50px 20px;
+  }
+
+  .ProfileImage {
+    height: 300px; 
+    width: 100%; 
+  }
+
+  .CSRight p {
+    font-size: 1rem; 
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ChiSonoSection .container {
+    flex-direction: column; 
+  }
+
+  .CSLeft, .CSRight {
+    flex: none;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+  .ProfileImage {
+    height: auto; 
+  }
+
+  .ChiSonoSection .container h2 {
+    font-size: 2rem; 
+  }
+
+  .CSRight p {
+    font-size: 1rem; 
+    padding-top: 20px;
+  }
+}
+
 
 
 
 /*Galleria Section*/
-.GalleriaSection{
-
+.GalleriaSection {
 }
 
-.GalleriaSection .container{
+.GalleriaSection .container {
   height: 100%;
   padding: 100px 40px;
   gap: 40px;
@@ -172,27 +265,22 @@ font-size: 3rem;
   flex-direction: column;
 }
 
-.GalleriaText{
-  color:#705936;
+.GalleriaText {
+  color: #705936;
   font-size: 3rem;
 }
 
-.GalleriaSection .container p{
+.GalleriaSection .container p {
   font-size: 1.3rem;
-  color:#705936;
+  color: #705936;
 }
 
-.IconsContainer{
+.IconsContainer {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping of items for responsiveness */
 }
 
-.IconsContainer{
-  display: flex;
-  flex-direction: row;
-}
-
-.IconsContainer .col-4{
+.IconsContainer .col-4 {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -200,7 +288,7 @@ font-size: 3rem;
   text-decoration: none;
 }
 
-.Categories{
+.Categories {
   height: 200px;
   padding: 10px;
   width: 100%;
@@ -208,32 +296,95 @@ font-size: 3rem;
   transition: all 0.2s ease-in-out;
 }
 
-.CategoryName{
+.CategoryName {
   position: absolute;
   display: none;
   color: white;
   font-size: 2rem;
-  }
+}
 
-.IconsContainer .col-4:hover .CategoryName{
+.IconsContainer .col-4:hover .CategoryName {
   display: flex;
 }
 
-
 .Categories:hover {
-  filter: brightness(50%) ;
+  filter: brightness(50%);
   cursor: pointer;
   transform: scale(1.02);
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .GalleriaSection .container {
+    padding: 50px 20px; 
+  }
 
+  .GalleriaText {
+    font-size: 2.5rem; 
+  }
+
+  .GalleriaSection .container p {
+    font-size: 1.1rem; 
+  }
+
+  .Categories {
+    height: 180px; 
+  }
+
+  .CategoryName {
+    font-size: 1.8rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .IconsContainer .col-4 {
+    flex: 0 0 50%; 
+    margin-bottom: 20px; 
+  }
+
+  .Categories {
+    height: 150px; 
+  }
+
+  .GalleriaText {
+    font-size: 2rem; 
+    }
+
+  .GalleriaSection .container p {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .IconsContainer .col-4 {
+    flex: 0 0 100%; 
+  }
+
+  .Categories {
+    height: 140px; 
+  }
+
+  .CategoryName {
+    font-size: 1.5rem; 
+  }
+
+  .GalleriaText {
+    font-size: 1.8rem; 
+  }
+
+  .GalleriaSection .container p {
+    font-size: 0.9rem; 
+  }
+}
+
+/* Ceri Pasquali Section */
 .CeriPasquali {
   padding-bottom: 100px;
 }
 
 .CeriPasqualiText {
   font-size: 3rem;
-  color: #705936; 
+  color: #705936;
 }
 
 .CeriPasqualiContainer {
@@ -243,12 +394,12 @@ font-size: 3rem;
   align-items: center;
   flex-direction: column;
   gap: 40px;
-
 }
 
 .items-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   gap: 80px;
 }
 
@@ -257,7 +408,6 @@ font-size: 3rem;
   text-align: center;
   background-color: #f1eee8;
   padding: 20px;
- 
 }
 
 .item-image {
@@ -267,7 +417,7 @@ font-size: 3rem;
 
 .item-title {
   font-size: 1.5rem;
-  color: #705936; 
+  color: #705936;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -278,34 +428,101 @@ font-size: 3rem;
   color: #705936;
 }
 
-.coloriInAltreFormeSection{
-  background-image:url('/public/assets/images/Colori In Altre Forme.jpg') ;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .CeriPasqualiContainer {
+    padding: 0 20px; 
+  }
+
+  .CeriPasqualiText {
+    font-size: 2.5rem;
+  }
+
+  .items-container {
+    gap: 40px; 
+  }
+
+  .item {
+    width: 250px; 
+  }
+
+  .item-title {
+    font-size: 1.3rem; 
+  }
+
+  .item-description {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .items-container {
+    gap: 20px; 
+  }
+
+  .item {
+    width: 200px; 
+    padding: 15px; 
+  }
+
+  .item-title {
+    font-size: 1.2rem; 
+  }
+
+  .item-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .CeriPasqualiText {
+    font-size: 2rem; 
+  }
+
+  .items-container {
+    gap: 10px; 
+  }
+
+  .item {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  .item-title {
+    font-size: 1rem; 
+  }
+
+  .item-description {
+    font-size: 0.8rem;
+  }
+}
+/* Colori In Altre Forme Section */
+
+.coloriInAltreFormeSection {
+  background-image: url('/public/assets/images/Colori In Altre Forme.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -50px ;
+  background-position-y: -50px;
   z-index: 2;
-
-}
-
-.coloriInAltreFormeSection{
- height: 100%;
- padding-block: 100px;
+  height: 100%;
+  padding-block: 100px;
 }
 
 .coloriInAltreFormeText {
   color: #f1eee8;
   font-size: 3rem;
-
+  text-align: center;
 }
 
-.coloriInAltreFormeSection p{
-  color:#f1eee8;
+.coloriInAltreFormeSection p {
+  color: #f1eee8;
   font-size: 1.2rem;
-
+  text-align: center;
+  padding: 0 20px; /* Add padding for better readability on smaller screens */
 }
 
-.coloriInAltreFormeContainer{
+.coloriInAltreFormeContainer {
   height: 100%;
   display: flex;
   justify-content: end;
@@ -314,29 +531,126 @@ font-size: 3rem;
   gap: 40px;
 }
 
-
-.mostreSection{
-  padding-block: 80px;
-  background-color: #f1eee8;
-
+.IconsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px;
 }
 
-.mostreText{
-  color: #705936;
-  font-size: 3rem;
-
+.IconsContainer .col-4 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  width: 30%; /* Adjust column width for larger screens */
 }
-.mostreSection h6{
-  color: #705936;
+
+.Categories {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.CategoryName {
+  position: absolute;
+  display: none;
+  color: white;
   font-size: 1.5rem;
 }
 
-.mostreSection p{
-  color: #705936;
-  font-size: 1rem;
+.IconsContainer .col-4:hover .CategoryName {
+  display: flex;
 }
 
-.mostreContainer{
+.Categories:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .coloriInAltreFormeText {
+    font-size: 2.5rem; /* Reduce font size */
+  }
+
+  .coloriInAltreFormeSection p {
+    font-size: 1rem; /* Reduce font size */
+  }
+
+  .IconsContainer .col-4 {
+    width: 45%; /* Increase column width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .coloriInAltreFormeText {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  .coloriInAltreFormeSection p {
+    font-size: 0.9rem; /* Further reduce font size */
+  }
+
+  .IconsContainer .col-4 {
+    width: 100%; /* Full-width for small screens */
+  }
+
+  .IconsContainer {
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .Categories {
+    height: 150px; /* Adjust image height */
+  }
+
+  .CategoryName {
+    font-size: 1.2rem; /* Adjust category name font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .coloriInAltreFormeText {
+    font-size: 1.8rem; /* Smallest font size for mobile */
+  }
+
+  .coloriInAltreFormeSection p {
+    font-size: 0.85rem; /* Adjust text font size */
+  }
+
+  .IconsContainer {
+    gap: 10px; /* Minimize gap for mobile screens */
+  }
+}
+
+
+.mostreSection {
+  padding-block: 80px;
+  background-color: #f1eee8;
+}
+
+.mostreText {
+  color: #705936;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.mostreSection h6 {
+  color: #705936;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.mostreSection p {
+  color: #705936;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.mostreContainer {
   height: 100%;
   display: flex;
   justify-content: end;
@@ -348,12 +662,92 @@ font-size: 3rem;
 .mostreIcons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow icons to wrap for smaller screens */
+  gap: 20px; /* Add gap between items */
 }
 
-.mostreIcons .col-4 img {
-
-  height:200px;
+.mostreIcons .col-4 {
+  width: 30%; /* Adjust column width for larger screens */
+  max-width: 200px; /* Limit maximum width for consistency */
+  padding: 10px;
 }
+
+.Categories {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.Categories:hover {
+  filter: brightness(90%);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mostreText {
+    font-size: 2.5rem; /* Reduce font size */
+  }
+
+  .mostreSection h6 {
+    font-size: 1.3rem; /* Adjust heading size */
+  }
+
+  .mostreSection p {
+    font-size: 0.95rem; /* Adjust paragraph size */
+  }
+
+  .mostreIcons .col-4 {
+    width: 45%; /* Adjust column width for medium screens */
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mostreText {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  .mostreSection h6 {
+    font-size: 1.2rem; /* Further adjust heading size */
+  }
+
+  .mostreSection p {
+    font-size: 0.9rem; /* Reduce paragraph size */
+  }
+
+  .mostreIcons .col-4 {
+    width: 100%; /* Full-width for small screens */
+    text-align: center;
+  }
+
+  .mostreIcons {
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .mostreText {
+    font-size: 1.8rem; /* Smallest font size for mobile */
+  }
+
+  .mostreSection h6 {
+    font-size: 1rem; /* Adjust heading for mobile */
+  }
+
+  .mostreSection p {
+    font-size: 0.85rem; /* Adjust paragraph for mobile */
+  }
+
+  .mostreIcons {
+    gap: 10px; /* Minimize gap for very small screens */
+  }
+
+  .mostreIcons .col-4 {
+    padding: 5px;
+  }
+}
+
 
 
 

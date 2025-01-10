@@ -9,9 +9,10 @@ function ColoriInAltreFormePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const foundColori = coloriInAltreForme.find((col) => col.path === `/${coloriPath}`);
+    const foundColori = coloriInAltreForme.find((col) => col.path === coloriPath);
     setColori(foundColori);
-  }, [coloriPath]);  
+  }, [coloriPath]);
+  
 
   if (!colori) {
     return <div></div>;  

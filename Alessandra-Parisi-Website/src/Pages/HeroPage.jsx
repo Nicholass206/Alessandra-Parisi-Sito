@@ -15,6 +15,7 @@ import LibreriaPalermo from '/assets/images/mostre/tras-palermo.jpg'
 import Bambusa from '/assets/images/mostre/bambusa.jpg'
 import Laluce from '/assets/images/mostre/la luce1.jpg'
 import {Link} from 'react-router-dom';
+// import Typed from 'react-typed';
 
 export default function HeroPage() {
 
@@ -24,7 +25,7 @@ export default function HeroPage() {
         
          <div id="home" className="HeroSection"> 
             <div className="HeroContainer container">
-                <h1 className="Rox">Passione per il colore</h1>
+                <h1 className="Rox">Passione per il <br/> colore</h1>
                 <span >Alessandra parisi</span>
             </div>
         </div>
@@ -123,57 +124,49 @@ In alcuni casi ho messo le mie mani al servizio di idee altrui cercando di inter
                 </div>
             </div>
          </div>
-      <div id="mostre" className="mostreSection">
-        <div className="container mostreContainer">
-          <h1 className="Rox text-center mostreText">Mostre</h1>
-          <h6 className="text-center Rox">La voce dell’icona è voce della chiesa.</h6>
-          <p className="text-center Rox">
-            Ho tentato di diffondere questo messaggio attraverso alcune esposizioni in luoghi e contesti diversi.
-          </p>
-          <div className="mostreIcons row">
-            <div className="mostreItem col-4">
-              <Link to="/spiritualita-e-colori" className="col-4 p-0">
-                <img src={Spiritualita} alt="Spiritualita-e-Colori" className="Categories" />
-              </Link>
-              <div className="mostreContent">
-                <h3 className="CategoryName Rox">Spiritualita e colori</h3>
-              </div>
-            </div>
-            <div className="mostreItem  col-4">
-              <div className="mostreContent">
-                <h3 className="CategoryName Rox">Libreria Traspontina a Roma</h3>
-              </div>
-              <Link to="/libreria-traspontina" className=" p-0">
-                <img src={LibreriaTraspontina} alt="Libreria Traspontina a Roma" className="Categories" />
-              </Link>
-            </div>
-            <div className="mostreItem  col-4">
-              <Link to="/libreria-palermo" className=" p-0">
-                <img src={LibreriaPalermo} alt="Decori" className="Categories" />
-              </Link>
-              <div className="mostreContent">
-                <h3 className="CategoryName Rox">Libreria Universitas a Palermo</h3>
-              </div>
-            </div>
-            <div className="mostreItem  col-4">
-              <div className="mostreContent">
-                <h3 className="CategoryName Rox">Bambusa Garden</h3>
-              </div>
-              <Link to="/bambusa" className=" p-0">
-                <img src={Bambusa} alt="Decori" className="Categories" />
-              </Link>
-            </div>
-            <div className="mostreItem  col-4">
-              <Link to="/la-luce" className=" p-0">
-                <img src={Laluce} alt="Decori" className="Categories" />
-              </Link>
-              <div className="mostreContent">
-                <h3 className="CategoryName Rox">Condividere per comunicare – La Luce delle Icone</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+
+         <div id="mostre" className="mostreSection">
+  <div className="container mostreContainer">
+    <h1 className="Rox text-center mostreText">Mostre</h1>
+    <h6 className="text-center Rox">La voce dell’icona è voce della chiesa.</h6>
+    <p className="text-center Rox">
+      Ho tentato di diffondere questo messaggio attraverso alcune esposizioni in luoghi e contesti diversi.
+    </p>
+    <div className="mostreIcons row">
+      <div className="col-4">
+        <Link to="/spiritualita-ecolori" className="col-4 p-0">
+          <img src={Spiritualita} alt="Spiritualita-e-Colori" className="Categories" />
+        </Link>
+        <p className="text-center Rox">Spiritualità e Colori</p>
+      </div>
+      <div className="col-4">
+        <Link to="/libreria-traspontina" className="p-0">
+          <img src={LibreriaTraspontina} alt="Libreria Traspontina a Roma" className="Categories" />
+        </Link>
+        <p className="text-center Rox">Libreria Traspontina</p>
+      </div>
+      <div className="col-4">
+        <Link to="/libreria-palermo" className="p-0">
+          <img src={LibreriaPalermo} alt="Libreria Palermo" className="Categories" />
+        </Link>
+        <p className="text-center Rox">Libreria Palermo</p>
+      </div>
+      <div className="col-4">
+        <Link to="/bambusa" className="p-0">
+          <img src={Bambusa} alt="Bambusa" className="Categories" />
+        </Link>
+        <p className="text-center Rox">Bambusa</p>
+      </div>
+      <div className="col-4">
+        <Link to="/la-luce" className="p-0">
+          <img src={Laluce} alt="La Luce" className="Categories" />
+        </Link>
+        <p className="text-center Rox">La Luce</p>
+      </div>
+    </div>
+  </div>
 </div>
+
 <div id ="appunti" className="appuntiSection">
   <div className="container appuntiContainer">
     <h2 className="text-center Rox">Appunti</h2>
