@@ -40,8 +40,9 @@
    }
 
    .IconImage{
-    height: 400px;
-    
+    height: 200px;
+    display: inline-block;
+    width: 180px;
    }
 
   
