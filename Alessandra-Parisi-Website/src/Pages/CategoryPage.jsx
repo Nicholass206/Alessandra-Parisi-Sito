@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import categories from "../data/Categories.js";
 import { SlideshowLightbox } from "lightbox.js-react";

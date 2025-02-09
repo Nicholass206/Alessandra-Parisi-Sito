@@ -20,8 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HeroPage />} />
           <Route path="/:categoryPath" element={<CategoryPage />} />
-          {/* <Route path="/:coloriPath" element={<ColoriInAltreFormepage />} /> */}
-          {/* <Route path="/:mostrePath" element={<MostrePage />} /> */}
+          <Route path="/Colori/:coloriPath" element={<ColoriInAltreFormepage />} />
+          <Route path="/Mostre/:mostrePath" element={<MostrePage />} />
         </Routes>
       </ScrollProvider>
     </>
