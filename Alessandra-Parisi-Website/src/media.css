@@ -1,0 +1,120 @@
+@media screen and (max-width:480px) {
+
+    /* Header Section */
+    .HeaderSection {
+        padding: 10px 20px;
+        height: 70px;
+    }
+
+    .HeaderLink {
+        font-weight: 700 !important;
+        padding: 10px 30px;
+        border-radius: 9999px;
+        transition: all 0.3s ease-in-out;
+        color: white;
+        font-size: 1rem;
+
+    }
+
+
+    /* Hero section */
+    .HeroSection {
+        height: 70vh;
+        background-size: contain;
+        background-position-y: 0px;
+        background-attachment: none;
+        background-image: url('../public/assets/images/churchImage.jpg');
+    }
+
+    .HeroSection h1 {
+        font-size: 2.5rem;
+    }
+
+    .HeroSection span {
+        font-size: 1rem;
+    }
+
+
+    /* ChiSono Section */
+    .ChiSonoSection{
+        padding: 0;
+    }
+
+    .ChiSonoSection .container .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CSLeft{
+        width: 100%;
+    }
+    
+    .ProfileImage{
+        height: 300px;
+        width: 100%;
+    }
+
+    .CSRight{
+        width: 100%;
+    }
+
+    .ChiSonoSection .container .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Galleria Section  */
+
+    .GalleriaText{
+        margin: 0;
+    }
+
+    .GalleriaSection .container {
+        gap: 20px;
+    }
+
+    .GalleriaSection .container p{
+        margin: 0;
+    }
+
+    .IconsContainer{
+        gap: 0;
+    }
+
+    .IconsContainer .col-4{
+        margin: 0;
+
+    }
+    
+    .CategoryName{
+        display: flex;
+        text-align: center;
+    }
+
+    /* Ceri Pasquali  */
+
+    .item-image{
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Colori in Altre Forme */
+
+    .coloriInAltreFormeSection{
+        background-attachment: none !important;
+    }
+
+    .Categories{
+        padding: 5px 0px;
+    }
+
+    .mostreSection h6{
+        margin: 0;
+    }
+
+    .mostreIcons .col-3{
+        padding: 0;
+    }
+}

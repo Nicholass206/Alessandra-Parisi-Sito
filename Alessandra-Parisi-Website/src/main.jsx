@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import { initLightboxJS } from "lightbox.js-react";
 import { useEffect } from "react";
+import '../src/media.css'
 
 function Root() {
   useEffect(() => {

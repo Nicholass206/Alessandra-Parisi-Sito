@@ -278,6 +278,7 @@ body,
 .IconsContainer {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of items for responsiveness */
+  gap: 0px;
 }
 
 .IconsContainer .col-4 {
@@ -535,7 +536,6 @@ body,
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  gap: 20px;
 }
 
 .IconsContainer .col-4 {
@@ -552,17 +552,6 @@ body,
   width: 100%;
   object-fit: cover;
   transition: all 0.2s ease-in-out;
-}
-
-.CategoryName {
-  position: absolute;
-  display: none;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.IconsContainer .col-4:hover .CategoryName {
-  display: flex;
 }
 
 .Categories:hover {
@@ -663,7 +652,6 @@ body,
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Allow icons to wrap for smaller screens */
-  gap: 20px; /* Add gap between items */
 }
 
 .mostreIcons .col-4 {

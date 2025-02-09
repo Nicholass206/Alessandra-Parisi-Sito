@@ -73,27 +73,27 @@ export default function HeroPage() {
             loro “archetipo”.
           </p>
           <div className="IconsContainer row">
-            <Link to="/il-cristo" className="col-4 p-0">
+            <Link to="/il-cristo" className="col-lg-4 p-0">
               <img src={Category1} alt="Il Cristo" className="Categories" />
               <h3 className="CategoryName Rox">Il Cristo</h3>
             </Link>
-            <Link to="/altre-icone" className="col-4 p-0">
+            <Link to="/altre-icone" className="col-lg-4 p-0">
               <img src={Category2} alt="Altre Icone" className="Categories" />
               <h3 className="CategoryName Rox">Altre Icone</h3>
             </Link>
-            <Link to="/angeli" className="col-4 p-0">
+            <Link to="/angeli" className="col-lg-4 p-0">
               <img src={Category3} alt="Angeli" className="Categories" />
               <h3 className="CategoryName Rox">Angeli</h3>
             </Link>
-            <Link to="/madre-di-dio" className="col-4 p-0">
+            <Link to="/madre-di-dio" className="col-lg-4 p-0">
               <img src={Category4} alt="Madre di Dio" className="Categories" />
               <h3 className="CategoryName Rox">Madre di Dio</h3>
             </Link>
-            <Link to="/santi" className="col-4 p-0">
+            <Link to="/santi" className="col-lg-4 p-0">
               <img src={Category5} alt="Santi" className="Categories" />
               <h3 className="CategoryName Rox">Santi</h3>
             </Link>
-            <Link to="/le-feste" className="col-4 p-0">
+            <Link to="/le-feste" className="col-lg-4 p-0">
               <img src={Category6} alt="Le Feste" className="Categories" />
               <h3 className="CategoryName Rox">Le Feste</h3>
             </Link>
@@ -132,15 +132,15 @@ export default function HeroPage() {
             desiderio del committente: incontri positivi per entrambi.
           </p>
           <div className="IconsContainer Row">
-            <Link to="/Colori/decori" className="col-4 p-0">
+            <Link to="/Colori/decori" className="col-lg-4 p-0">
               <img src={Decori} alt="Decori" className="Categories" />
               <h3 className="CategoryName Rox">Decori</h3>
             </Link>
-            <Link to="/Colori/lampade" className="col-4 p-0">
+            <Link to="/Colori/lampade" className="col-lg-4 p-0">
               <img src={Lampade} alt="Decori" className="Categories" />
               <h3 className="CategoryName Rox">Lampade</h3>
             </Link>
-            <Link to="/Colori/soggeti-per-bambini" className="col-4 p-0">
+            <Link to="/Colori/soggeti-per-bambini" className="col-lg-4 p-0">
               <img
                 src={SoggetiPerBambini}
                 alt="Decori"
@@ -163,8 +163,8 @@ export default function HeroPage() {
             esposizioni in luoghi e contesti diversi.
           </p>
           <div className="mostreIcons row">
-            <div className="col-4">
-              <Link to="/Mostre/spiritualita-ecolori" className="col-4 p-0">
+            <div className="col-lg-4 col-3">
+              <Link to="/Mostre/spiritualita-ecolori" className="col-lg-4 p-0">
                 <img
                   src={Spiritualita}
                   alt="Spiritualita-e-Colori"
@@ -173,7 +173,7 @@ export default function HeroPage() {
               </Link>
               <p className="text-center Rox">Spiritualità e Colori</p>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-3">
               <Link to="/Mostre/libreria-traspontina" className="p-0">
                 <img
                   src={LibreriaTraspontina}
@@ -183,7 +183,7 @@ export default function HeroPage() {
               </Link>
               <p className="text-center Rox">Libreria Traspontina</p>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-3 ">
               <Link to="/Mostre/libreria-palermo" className="p-0">
                 <img
                   src={LibreriaPalermo}
@@ -193,13 +193,13 @@ export default function HeroPage() {
               </Link>
               <p className="text-center Rox">Libreria Palermo</p>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-3">
               <Link to="/Mostre/bambusa" className="p-0">
                 <img src={Bambusa} alt="Bambusa" className="Categories" />
               </Link>
               <p className="text-center Rox">Bambusa</p>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-3">
               <Link to="/Mostre/la-luce" className="p-0">
                 <img src={Laluce} alt="La Luce" className="Categories" />
               </Link>
