@@ -31,7 +31,7 @@ export default function HeroPage() {
 
       <div id="chi-sono" className="ChiSonoSection">
         <div className="container">
-          <div className="row">
+          <div className="row gap-4 ChisSonoRow">
             <div className="col-5 CSLeft">
               <h2 className="Rox ChiSono">Chi Sono</h2>
               <img src={ProfilePhoto} alt="" className="ProfileImage" />

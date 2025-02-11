@@ -32,7 +32,7 @@ export default function Header() {
       </nav>
       <style jsx>{`
        
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
           .menu-icon {
             display: block;
           }

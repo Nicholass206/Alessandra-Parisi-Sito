@@ -71,13 +71,14 @@ body,
   border-radius: 9999px;
   transition: all 0.3s ease-in-out;
   color: white;
-  text-wrap: nowrap;
+  text-wrap: nowrap !important;
 
 }
 
 .HeaderSection a{
   text-decoration: none;
- 
+  text-wrap: nowrap !important;
+  text-align: center;
 }
 
 .hover-white:hover{
