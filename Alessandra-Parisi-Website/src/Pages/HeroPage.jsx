@@ -106,10 +106,12 @@ export default function HeroPage() {
           <h2 className="CeriPasqualiText text-center Rox">Ceri Pasquali</h2>
           <div className="items-container row">
             {CeriPasquali.map((item, index) => (
-              <div key={index} className="item col-4">
+              <div key={index} className="item col-4 d-flex flex-row align-items-center">
                 <img src={item.image} alt={item.title} className="item-image " />
-                <h3 className="item-title Rox">{item.title}</h3>
-                <p className="item-description">{item.description}</p>
+                <div className="d-flex flex-column">
+                  <h3 className="item-title Rox">{item.title}</h3>
+                  <p className="item-description">{item.description}</p>
+                </div>
               </div>
             ))}
           </div>

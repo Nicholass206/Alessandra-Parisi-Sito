@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <div className="HeaderSection">
+    <div className="HeaderSection d-flex flex-column justify-content-center">
       <nav className=" container">
         <div className="menu-icon" onClick={toggleMenu}>
           {menuOpen ? <FiX size={30} color={Headerstyle.color} /> : <FiMenu size={30} color={Headerstyle.color} />}
