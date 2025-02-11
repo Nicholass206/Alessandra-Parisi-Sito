@@ -21,10 +21,10 @@ function MostrePage() {
   return (
     <div className="CategoryPageSection">
       <div className="container">
-        <h1 className="Rox">{Mostre.title}</h1>
+        <h1 className="Rox text-center">{Mostre.title}</h1>
         <p className="Rox">{Mostre.description}</p>
         <div className="images row">
-          <SlideshowLightbox className="row align-items-center justify-content-center gap-3">
+          <SlideshowLightbox className="row align-items-center justify-content-center slideshow">
             {Mostre.images.map((image, index) => (
               <img
                 src={image.src}

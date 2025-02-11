@@ -71,12 +71,13 @@ body,
   border-radius: 9999px;
   transition: all 0.3s ease-in-out;
   color: white;
-  
+  text-wrap: nowrap;
 
 }
 
 .HeaderSection a{
   text-decoration: none;
+ 
 }
 
 .hover-white:hover{
@@ -90,7 +91,32 @@ body,
 }
 
 
-
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.HeaderList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.HeaderLink {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.HeaderLink.hover-white:hover {
+  color: white;
+}
+.HeaderLink.hover-brown:hover {
+  color: #705936;
+}
 
 
 
@@ -302,10 +328,12 @@ body,
   display: none;
   color: white;
   font-size: 2rem;
+
 }
 
-.IconsContainer .col-4:hover .CategoryName {
-  display: flex;
+.IconsContainer .col-lg-4:hover .CategoryName {
+  display:flex !important;
+
 }
 
 .Categories:hover {
@@ -536,16 +564,10 @@ body,
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  
 }
 
-.IconsContainer .col-4 {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  text-decoration: none;
-  width: 30%; /* Adjust column width for larger screens */
-}
+
 
 .Categories {
   height: 200px;
@@ -584,9 +606,6 @@ body,
     font-size: 0.9rem; /* Further reduce font size */
   }
 
-  .IconsContainer .col-4 {
-    width: 100%; /* Full-width for small screens */
-  }
 
   .IconsContainer {
     gap: 15px; /* Reduce gap between items */
@@ -773,3 +792,6 @@ body,
 }
 
 
+.slideshow{
+  gap: 12px;
+}

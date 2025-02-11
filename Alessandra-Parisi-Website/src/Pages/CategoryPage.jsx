@@ -21,9 +21,9 @@ function CategoryPage() {
   return (
     <div className="CategoryPageSection">
       <div className="container">
-        <h1 className="Rox">{category.headLine}</h1>
+        <h1 className="Rox text-center">{category.headLine}</h1>
         <p>{category.description}</p>
-        <SlideshowLightbox className="row align-items-center justify-content-center gap-3">
+        <SlideshowLightbox className="row align-items-center justify-content-center slideshow">
           {category.images.map((image, index) => (
             <img
               src={image.src}
