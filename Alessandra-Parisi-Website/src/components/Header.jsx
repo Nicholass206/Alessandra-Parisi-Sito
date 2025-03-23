@@ -1,43 +1,90 @@
-import { useState } from 'react';
-import { useScrollContext } from '../Pages/ScrollContext';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { useState } from "react";
+import { useScrollContext } from "../Pages/ScrollContext";
+import { FiMenu, FiX } from "react-icons/fi";
+import "./Header.css";
 
 export default function Header() {
   const isHeaderVisible = useScrollContext();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const Headerstyle = {
-    color: isHeaderVisible ? "#705936" : "#ffffff",
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="HeaderSection d-flex flex-column justify-content-center">
-      <nav className=" container">
+    <div
+      className={`HeaderSection d-flex flex-column justify-content-center ${
+        isHeaderVisible ? "header-light" : "header-dark"
+      }`}
+    >
+      <nav className="container">
         <div className="menu-icon" onClick={toggleMenu}>
-          {menuOpen ? <FiX size={30} color={Headerstyle.color} /> : <FiMenu size={30} color={Headerstyle.color} />}
+          {menuOpen ? (
+            <FiX size={30} color={isHeaderVisible ? "#705936" : "#ffffff"} />
+          ) : (
+            <FiMenu size={30} color={isHeaderVisible ? "#705936" : "#ffffff"} />
+          )}
         </div>
-        <ul className={`HeaderList ${menuOpen ? 'open' : ''}`}>
-          <a href="#home"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>HOME</li></a>
-          <a href="#chi-sono"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>CHI SONO</li></a>
-          <a href="#galleria-icone"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>GALLERIA ICONE</li></a>
-          <a href="#ceri-pasquali"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>CERI PASQUALI</li></a>
-          <a href="#colori"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>COLORI IN ALTRE FORME</li></a>
-          <a href="#mostre"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>MOSTRE</li></a>
-          <a href="#appunti"><li className={`HeaderLink ${isHeaderVisible ? 'hover-white' : 'hover-brown'}`} style={Headerstyle}>APPUNTI</li></a>
+        <ul className={`HeaderList ${menuOpen ? "open" : ""}`}>
+          <a href="#home">
+            <li
+              className={`HeaderLink ${
+                isHeaderVisible ? "hover-white" : "hover-brown"
+              }`}
+            >
+              HOME
+            </li>
+          </a>
+          <a href="#chi-sono">
+            <li
+              className={`HeaderLink ${
+                isHeaderVisible ? "hover-white" : "hover-brown"
+              }`}
+            >
+              CHI SONO
+            </li>
+          </a>
+          <a href="#galleria-icone">
+            <li
+              className={`HeaderLink ${
+                isHeaderVisible ? "hover-white" : "hover-brown"
+              }`}
+            >
+              GALLERIA ICONE
+            </li>
+          </a>
+          <a href="#ceri-pasquali">
+            <li
+              className={`HeaderLink ${
+                isHeaderVisible ? "hover-white" : "hover-brown"
+              }`}
+            >
+              CERI PASQUALI
+            </li>
+          </a>
+          <a href="#colori">
+            <li className ={`HeaderLink ${
+              isHeaderVisible ? 'hover-white':'hover-brown' 
+            }`}>COLORI IN ALTRE FORME</li>
+          </a>
+          <a href="#mostre">
+            <li className={`HeaderLink ${
+              isHeaderVisible ? 'hover-white': 'hover-brown'
+            }`}>MOSTRE</li>
+          </a>
+          <a href="#appunti">
+            <li className={`HeaderLink ${
+              isHeaderVisible ? 'hover-white':'hover-brown'
+            }`}>APPUNTI</li>
+          </a>
+          {/* Repeat for other links */}
         </ul>
       </nav>
       <style jsx>{`
-       
         @media (max-width: 1000px) {
           .menu-icon {
             display: block;
           }
           .HeaderList {
-            display: ${menuOpen ? 'flex' : 'none'};
+            display: ${menuOpen ? "flex" : "none"};
             flex-direction: column;
             position: absolute;
             top: 60px;

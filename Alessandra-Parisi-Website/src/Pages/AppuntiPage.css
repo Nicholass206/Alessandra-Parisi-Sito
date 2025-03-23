@@ -1,0 +1,37 @@
+.appuntiSection{
+    background-image:url('/public/assets/images/appunti.png') ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:-100px ;
+    z-index: 2;
+    height: 100vh;
+  
+  }
+  
+  .appuntiSection .container{
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .appuntiSection h2{
+    font-size: 3rem !important;
+    color: #705936;
+  }
+  
+  .appuntiSection h6{
+    color: #705936;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 950px;
+    padding-top: 50px;
+    letter-spacing: 1px;
+  }
+  
+  
+  .slideshow{
+    gap: 12px;
+  }

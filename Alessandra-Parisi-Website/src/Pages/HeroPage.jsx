@@ -15,6 +15,16 @@ import LibreriaPalermo from "../../public/assets/images/mostre/tras-palermo.jpg"
 import Bambusa from "../../public/assets/images/mostre/bambusa.jpg";
 import Laluce from "../../public/assets/images/mostre/la luce1.jpg";
 import { Link } from "react-router-dom";
+import './HeroPage.css';
+import './ChiSonoPage.css';
+import './GalleriaIconePage.css';
+import './CeriPasqualiPage.css';
+import './ColoriInAltreFormePage.css';
+import './MostrePage.css';
+import './AppuntiPage.css';
+
+
+
 // import Typed from 'react-typed';
 
 export default function HeroPage() {

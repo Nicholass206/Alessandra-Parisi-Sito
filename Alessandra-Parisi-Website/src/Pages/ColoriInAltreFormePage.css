@@ -1,0 +1,106 @@
+.coloriInAltreFormeSection {
+    background-image: url('/public/assets/images/Colori In Altre Forme.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    z-index: 2;
+    height: 100%;
+    padding-block: 100px;
+  }
+  
+  .coloriInAltreFormeText {
+    color: #f1eee8;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .coloriInAltreFormeSection p {
+    color: #f1eee8;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 20px; /* Add padding for better readability on smaller screens */
+  }
+  
+  .coloriInAltreFormeContainer {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .IconsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    
+  }
+  
+  
+  
+  .Categories {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .Categories:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .coloriInAltreFormeText {
+      font-size: 2.5rem; /* Reduce font size */
+    }
+  
+    .coloriInAltreFormeSection p {
+      font-size: 1rem; /* Reduce font size */
+    }
+  
+    .IconsContainer .col-4 {
+      width: 45%; /* Increase column width for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .coloriInAltreFormeText {
+      font-size: 2rem; /* Further reduce font size */
+    }
+  
+    .coloriInAltreFormeSection p {
+      font-size: 0.9rem; /* Further reduce font size */
+    }
+  
+  
+    .IconsContainer {
+      gap: 15px; /* Reduce gap between items */
+    }
+  
+    .Categories {
+      height: 150px; /* Adjust image height */
+    }
+  
+    .CategoryName {
+      font-size: 1.2rem; /* Adjust category name font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coloriInAltreFormeText {
+      font-size: 1.8rem; /* Smallest font size for mobile */
+    }
+  
+    .coloriInAltreFormeSection p {
+      font-size: 0.85rem; /* Adjust text font size */
+    }
+  
+    .IconsContainer {
+      gap: 10px; /* Minimize gap for mobile screens */
+    }
+  }

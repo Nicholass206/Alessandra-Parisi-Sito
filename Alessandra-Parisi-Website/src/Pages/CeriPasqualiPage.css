@@ -1,0 +1,143 @@
+.CeriPasquali {
+  height: 120vh;
+  padding-bottom:180px
+
+}
+
+.CeriPasqualiText {
+  font-size: 3rem;
+  color: #705936;
+}
+
+.CeriPasqualiContainer {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* This will ensure items wrap on smaller screens */
+  gap: 20px; /* Ensures spacing between items */
+}
+
+.item {
+  text-align: center;
+  background-color: #f1eee8;
+  padding: 20px;
+  border: solid 10px white;
+  flex: 1 1 300px; /* Ensures items adjust based on available space */
+  max-width: 350px; /* Prevents items from becoming too wide */
+}
+
+.item-image {
+  width: 150px;
+  margin-bottom: 15px;
+  height: 200px;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  color: #705936;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #705936;
+  padding: 5px;
+  margin: 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 1366px) {
+  .CeriPasqualiText {
+    font-size: 2.8rem; /* Adjust for normal laptop screens */
+  }
+
+  .item {
+    width: 280px; /* Slightly smaller for laptops */
+  }
+
+  .item-title {
+    font-size: 1.4rem; /* Adjust title size for smaller screens */
+  }
+
+  .item-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .CeriPasqualiContainer {
+    padding: 0 20px;
+  }
+
+  .CeriPasqualiText {
+    font-size: 2.5rem;
+  }
+
+  .items-container {
+    gap: 30px; /* Adjust gap between items */
+  }
+
+  .item {
+    width: 250px; /* Adjust width for smaller screens */
+  }
+
+  .item-title {
+    font-size: 1.3rem;
+  }
+
+  .item-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .items-container {
+    gap: 20px; /* Slightly smaller gap */
+  }
+  
+  .item {
+    width: 200px;
+    padding: 15px;
+  }
+  
+  .item-title {
+    font-size: 1.2rem;
+  }
+  
+  .item-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .CeriPasqualiText {
+    font-size: 2rem;
+  }
+  
+  .items-container {
+    gap: 10px;
+  }
+  
+  .item {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .item-title {
+    font-size: 1rem;
+  }
+
+  .item-description {
+    font-size: 0.8rem;
+  }
+}

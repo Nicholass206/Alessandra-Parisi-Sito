@@ -1,0 +1,124 @@
+.mostreSection {
+    /* padding-block: 80px; */
+    background-color: #705936;
+    height: 120vh;
+    padding-bottom: 40px;
+    /* scroll-margin-top: -150px; */
+
+  }
+  
+  .mostreText {
+    color: #f1eee8;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .mostreSection h6 {
+    color: #f1eee8;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .mostreSection p {
+    color: #f1eee8;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .mostreContainer {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .mostreIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow icons to wrap for smaller screens */
+  }
+  
+  .mostreIcons .col-4 {
+    width: 30%; /* Adjust column width for larger screens */
+    max-width: 200px; /* Limit maximum width for consistency */
+    padding: 10px;
+  }
+  
+  .Categories {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Categories:hover {
+    filter: brightness(90%);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .mostreText {
+      font-size: 2.5rem; /* Reduce font size */
+    }
+  
+    .mostreSection h6 {
+      font-size: 1.3rem; /* Adjust heading size */
+    }
+  
+    .mostreSection p {
+      font-size: 0.95rem; /* Adjust paragraph size */
+    }
+  
+    .mostreIcons .col-4 {
+      width: 45%; /* Adjust column width for medium screens */
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mostreText {
+      font-size: 2rem; /* Further reduce font size */
+    }
+  
+    .mostreSection h6 {
+      font-size: 1.2rem; /* Further adjust heading size */
+    }
+  
+    .mostreSection p {
+      font-size: 0.9rem; /* Reduce paragraph size */
+    }
+  
+    .mostreIcons .col-4 {
+      width: 100%; /* Full-width for small screens */
+      text-align: center;
+    }
+  
+    .mostreIcons {
+      gap: 15px; /* Reduce gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mostreText {
+      font-size: 1.8rem; /* Smallest font size for mobile */
+    }
+  
+    .mostreSection h6 {
+      font-size: 1rem; /* Adjust heading for mobile */
+    }
+  
+    .mostreSection p {
+      font-size: 0.85rem; /* Adjust paragraph for mobile */
+    }
+  
+    .mostreIcons {
+      gap: 10px; /* Minimize gap for very small screens */
+    }
+  
+    .mostreIcons .col-4 {
+      padding: 5px;
+    }
+  }
+  

@@ -1,0 +1,70 @@
+.HeroSection{
+    height: 100vh;
+    background-image: url('/public/assets/images/church.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px ;
+    z-index: 2;
+  }
+  
+  .HeroContainer{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  
+  
+  .HeroSection h1 {
+    color: white;
+    font-size: 6rem;
+    max-width: 700px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing 4s steps(30, end), blink 0.5s step-end infinite 4s;
+    border-right: 3px solid white;
+  }
+  
+  
+  
+  
+  
+  /* Stop blinking cursor after animation */
+  .HeroSection h1.animated {
+    animation: none;
+    border-right: none;
+  }
+  
+  
+  
+  
+  .HeroContainer span{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0px 10px;
+  }

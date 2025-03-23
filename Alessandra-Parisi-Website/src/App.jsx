@@ -8,14 +8,33 @@ import '../src/fonts/Roxborough.ttf';
 import { ScrollProvider } from '../src/Pages/ScrollContext';
 import ColoriInAltreFormepage from './Pages/ColoriInAltreFormePage';
 import MostrePage from './Pages/MostrePage';
+import { useEffect } from 'react';
+
+function ScrollRestoration() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      requestAnimationFrame(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  }, [location]);
+  
+
+  return null;
+}
 
 function App() {
-  const location = useLocation(); 
+  const location = useLocation();
 
   return (
     <>
       <ScrollProvider>
-        
+        <ScrollRestoration />
         {location.pathname === "/" && <Header />}
         <Routes>
           <Route path="/" element={<HeroPage />} />
@@ -29,4 +48,3 @@ function App() {
 }
 
 export default App;
-
