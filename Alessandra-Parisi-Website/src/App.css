@@ -41,10 +41,8 @@ body,
   font-family: "Roxborough";
 }
 
-/*Header CSS*/
 
 
-/*Hero CSS*/
 .HeroSection{
   height: 120vh;
   background-image: url('/public/assets/images/church.png');
@@ -97,7 +95,6 @@ body,
 
 
 
-/* Stop blinking cursor after animation */
 .HeroSection h1.animated {
   animation: none;
   border-right: none;
