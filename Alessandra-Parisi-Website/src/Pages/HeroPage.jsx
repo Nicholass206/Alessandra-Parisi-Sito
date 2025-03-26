@@ -24,9 +24,6 @@ import './MostrePage.css';
 import './AppuntiPage.css';
 
 
-
-// import Typed from 'react-typed';
-
 export default function HeroPage() {
   return (
     <div>
