@@ -25,43 +25,6 @@ const categories = [
     },
     {
       id: 2,
-      path: "/altre-icone",
-      headLine: "Altre immagini religiose",
-      description: "",
-      images: [
-        {src:"/assets/images/altre/Angelo Custode preghiera.JPG", title:""},
-        {src:"/assets/images/altre/Angelo.JPG", title:""},
-        {src:"/assets/images/altre/CRISTO MISERICORDIOSO.jpg", title:""},
-        {src:"/assets/images/altre/Fredric Ozanam.JPG", title:""},
-        {src:"/assets/images/altre/Il Santo Volto.JPG", title:""},
-        {src:"/assets/images/altre/Madonna con Bambino 2.JPG", title:""},
-        {src:"/assets/images/altre/Madonna con Bambino.jpg", title:""},
-        {src:"/assets/images/altre/MADONNA DI GUADALUPE.JPG", title:""},
-        {src:"/assets/images/altre/Madre della Tenerezza bozzetto.JPG", title:""},
-        {src:"/assets/images/altre/Madre di dio Tenerezza.JPG", title:""},
-        {src:"/assets/images/altre/preghiera.JPG", title:""},
-        {src:"/assets/images/altre/un angioletto.JPG", title:""},
-       
-      ],
-    },
-    {
-      id: 3,
-      path: "/angeli",
-      headLine: "Angeli",
-      description: "",
-      images: [
-        {src:"/assets/images/Angeli/ANGELO CUST..jpg", title:""},
-        {src:"/assets/images/Angeli/ANGELO CUSTODE.jpg", title:""},
-        {src:"/assets/images/Angeli/Arc. Michele.JPG", title:""},
-        {src:"/assets/images/Angeli/ARCANGELO GABRIELE.jpg", title:""},
-        {src:"/assets/images/Angeli/ARCANGELO MICHELE.JPG", title:""},
-        {src:"/assets/images/Angeli/Arcangelo-Gabriele.png", title:""},
-        {src:"/assets/images/Angeli/PICC. ANGELO CUSTODE.jpg", title:""},
-        {src:"/assets/images/Angeli/PICCOLO ANGELO CUSTODE.jpg", title:""},
-      ],
-    },
-    {
-      id: 4,
       path: "/madre-di-dio",
       headLine: "Madre di Dio",
       description: `La Madonna non è un tipo di donna, ma la Madre di Dio, che rappresenta ogni creatura, e di ogni creatura è madre, in grado di accogliere ogni sentimento umano e di trasfigurarlo in preghiera. La madre di Dio è ricoperta dal mantello scuro, ornato di tre stelle, sulla fronte e su ciascuna spalla, ad indicare la sua verginità, prima, durante e dopo il parto. La cuffia pieghettata che trattiene i capelli, tipica delle donne siriane sposate, sporge dall’elegante maphorion,  decorato con tratti in oro. La natura umana di Maria è simboleggiata dalla tunica verde-blu, mentre il manto rosso scuro indica che essa è stata rivestita di regalità divina.`
@@ -97,7 +60,23 @@ const categories = [
       ],
     },
     {
-      id: 5,
+      id: 3,
+      path: "/angeli",
+      headLine: "Angeli",
+      description: "",
+      images: [
+        {src:"/assets/images/Angeli/ANGELO CUST..jpg", title:""},
+        {src:"/assets/images/Angeli/ANGELO CUSTODE.jpg", title:""},
+        {src:"/assets/images/Angeli/Arc. Michele.JPG", title:""},
+        {src:"/assets/images/Angeli/ARCANGELO GABRIELE.jpg", title:""},
+        {src:"/assets/images/Angeli/ARCANGELO MICHELE.JPG", title:""},
+        {src:"/assets/images/Angeli/Arcangelo-Gabriele.png", title:""},
+        {src:"/assets/images/Angeli/PICC. ANGELO CUSTODE.jpg", title:""},
+        {src:"/assets/images/Angeli/PICCOLO ANGELO CUSTODE.jpg", title:""},
+      ],
+    },  
+    {
+      id: 4,
       path: "/santi",
       headLine: "Santi",
       description: `
@@ -129,7 +108,7 @@ const categories = [
       
     },
     {
-      id: 6,
+      id: 5,
       path: "/le-feste",
       headLine: "Le Feste e altre composizioni",
       description: "",
@@ -148,6 +127,27 @@ const categories = [
         {src:"/assets/images/La Feste/S.FAMIGLIA 8.jpg", title:""},
 
         
+      ],
+    },
+    {
+      id: 6,
+      path: "/altre-icone",
+      headLine: "Altre immagini religiose",
+      description: "",
+      images: [
+        {src:"/assets/images/altre/Angelo Custode preghiera.JPG", title:""},
+        {src:"/assets/images/altre/Angelo.JPG", title:""},
+        {src:"/assets/images/altre/CRISTO MISERICORDIOSO.jpg", title:""},
+        {src:"/assets/images/altre/Fredric Ozanam.JPG", title:""},
+        {src:"/assets/images/altre/Il Santo Volto.JPG", title:""},
+        {src:"/assets/images/altre/Madonna con Bambino 2.JPG", title:""},
+        {src:"/assets/images/altre/Madonna con Bambino.jpg", title:""},
+        {src:"/assets/images/altre/MADONNA DI GUADALUPE.JPG", title:""},
+        {src:"/assets/images/altre/Madre della Tenerezza bozzetto.JPG", title:""},
+        {src:"/assets/images/altre/Madre di dio Tenerezza.JPG", title:""},
+        {src:"/assets/images/altre/preghiera.JPG", title:""},
+        {src:"/assets/images/altre/un angioletto.JPG", title:""},
+       
       ],
     },
   ];

@@ -87,18 +87,15 @@ export default function HeroPage() {
               <img src={Category1} alt="Il Cristo" className="Categories" />
               <h3 className="CategoryName Rox">Il Cristo</h3>
             </Link>
-            <Link to="/altre-icone" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}} >
-              <img src={Category2} alt="Altre Icone" className="Categories" />
-              <h3 className="CategoryName Rox">Altre Icone</h3>
+            <Link to="/madre-di-dio" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+              <img src={Category4} alt="Madre di Dio" className="Categories" />
+              <h3 className="CategoryName Rox">Madre di Dio</h3>
             </Link>
             <Link to="/angeli" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
               <img src={Category3} alt="Angeli" className="Categories" />
               <h3 className="CategoryName Rox">Angeli</h3>
             </Link>
-            <Link to="/madre-di-dio" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-              <img src={Category4} alt="Madre di Dio" className="Categories" />
-              <h3 className="CategoryName Rox">Madre di Dio</h3>
-            </Link>
+
             <Link to="/santi" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
               <img src={Category5} alt="Santi" className="Categories" />
               <h3 className="CategoryName Rox">Santi</h3>
@@ -106,6 +103,10 @@ export default function HeroPage() {
             <Link to="/le-feste" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
               <img src={Category6} alt="Le Feste" className="Categories" />
               <h3 className="CategoryName Rox">Le Feste</h3>
+            </Link>
+            <Link to="/altre-icone" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}} >
+              <img src={Category2} alt="Altre Icone" className="Categories" />
+              <h3 className="CategoryName Rox">Altre Immagini Religiose</h3>
             </Link>
           </div>
         </div>
