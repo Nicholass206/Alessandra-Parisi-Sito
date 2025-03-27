@@ -15,14 +15,13 @@ import LibreriaPalermo from "../../public/assets/images/mostre/DSC00700.jpg";
 import Bambusa from "../../public/assets/images/mostre/bambusa-img.jpg";
 import Laluce from "../../public/assets/images/mostre/DSC00719.jpg";
 import { Link } from "react-router-dom";
-import './HeroPage.css';
-import './ChiSonoPage.css';
-import './GalleriaIconePage.css';
-import './CeriPasqualiPage.css';
-import './ColoriInAltreFormePage.css';
-import './MostrePage.css';
-import './AppuntiPage.css';
-
+import "./HeroPage.css";
+import "./ChiSonoPage.css";
+import "./GalleriaIconePage.css";
+import "./CeriPasqualiPage.css";
+import "./ColoriInAltreFormePage.css";
+import "./MostrePage.css";
+import "./AppuntiPage.css";
 
 export default function HeroPage() {
   return (
@@ -80,28 +79,76 @@ export default function HeroPage() {
             loro “archetipo”.
           </p>
           <div className="IconsContainer row">
-            <Link to="/il-cristo" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <Link
+              to="/il-cristo"
+              className="col-lg-4 col-12 p-0 postion-relative"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Category1} alt="Il Cristo" className="Categories" />
               <h3 className="CategoryName Rox">Il Cristo</h3>
             </Link>
-            <Link to="/madre-di-dio" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <Link
+              to="/madre-di-dio"
+              className="col-lg-4 col-12 p-0 postion-relative"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Category4} alt="Madre di Dio" className="Categories" />
               <h3 className="CategoryName Rox">Madre di Dio</h3>
             </Link>
-            <Link to="/angeli" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <Link
+              to="/angeli"
+              className="col-lg-4 col-12 p-0 postion-relative"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Category3} alt="Angeli" className="Categories" />
               <h3 className="CategoryName Rox">Angeli</h3>
             </Link>
 
-            <Link to="/santi" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <Link
+              to="/santi"
+              className="col-lg-4 col-12 p-0 postion-relative"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Category5} alt="Santi" className="Categories" />
               <h3 className="CategoryName Rox">Santi</h3>
             </Link>
-            <Link to="/le-feste" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <Link
+              to="/le-feste"
+              className="col-lg-4 col-12 p-0 postion-relative"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Category6} alt="Le Feste" className="Categories" />
               <h3 className="CategoryName Rox">Le Feste</h3>
             </Link>
-            <Link to="/altre-icone" className="col-lg-4 col-12 p-0 postion-relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}} >
+            <Link
+              to="/altre-icone"
+              className="col-lg-4 col-12 p-0 postion-relative"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Category2} alt="Altre Icone" className="Categories" />
               <h3 className="CategoryName Rox">Altre Immagini Religiose</h3>
             </Link>
@@ -110,16 +157,16 @@ export default function HeroPage() {
       </div>
 
       <div id="ceri-pasquali" className="CeriPasquali">
-        <div className=" CeriPasqualiContainer container">
+        <div className="CeriPasqualiContainer container">
           <h2 className="CeriPasqualiText text-center Rox">Ceri Pasquali</h2>
           <div className="items-container row">
             {CeriPasquali.map((item, index) => (
-              <div key={index} className="item col-4 d-flex flex-row align-items-center">
-                <img src={item.image} alt={item.title} className="item-image " />
-                <div className="d-flex flex-column">
-                  <h3 className="item-title Rox">{item.title}</h3>
-                  <p className="item-description">{item.description}</p>
-                </div>
+              <div
+                key={index}
+                className="item col-4 d-flex flex-column align-items-center"
+              >
+                <h3 className="item-title Rox text-center">{item.title}</h3>
+                <img src={item.image} alt={item.title} className="item-image" />
               </div>
             ))}
           </div>
@@ -150,7 +197,10 @@ export default function HeroPage() {
               <img src={Lampade} alt="Decori" className="Categories" />
               <h3 className="CategoryName Rox">Lampade</h3>
             </Link>
-            <Link to="/Colori/soggeti-per-bambini" className=" col-lg-4 col-4 p-0">
+            <Link
+              to="/Colori/soggeti-per-bambini"
+              className=" col-lg-4 col-4 p-0"
+            >
               <img
                 src={SoggetiPerBambini}
                 alt="Decori"

@@ -1,28 +1,35 @@
 .CeriPasquali {
-  height: 120vh;
-  padding-bottom:180px
-
+  height: auto; /* Allow height to adjust dynamically */
+  min-height: 100vh; /* Ensure it doesn't shrink too much */
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
 }
 
 .CeriPasqualiText {
   font-size: 3rem;
   color: #705936;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .CeriPasqualiContainer {
-  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .items-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* This will ensure items wrap on smaller screens */
-  gap: 20px; /* Ensures spacing between items */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .item {
@@ -30,114 +37,78 @@
   background-color: #f1eee8;
   padding: 20px;
   border: solid 10px white;
-  flex: 1 1 300px; /* Ensures items adjust based on available space */
-  max-width: 350px; /* Prevents items from becoming too wide */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 250px; /* Ensures items don't get too small */
+  max-width: 400px; /* Prevents items from becoming too wide */
 }
 
 .item-image {
-  width: 150px;
-  margin-bottom: 15px;
-  height: 200px;
+  width: 100%; /* Ensures responsiveness */
+  max-width: 300px; /* Adjust as needed */
+  max-height: 300px; /* Prevents images from getting too tall */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the whole image is visible */
 }
 
 .item-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #705936;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.item-description {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #705936;
-  padding: 5px;
-  margin: 0px;
+  text-align: center;
 }
 
 /* Responsive Design */
 @media (max-width: 1366px) {
   .CeriPasqualiText {
-    font-size: 2.8rem; /* Adjust for normal laptop screens */
-  }
-
-  .item {
-    width: 280px; /* Slightly smaller for laptops */
-  }
-
-  .item-title {
-    font-size: 1.4rem; /* Adjust title size for smaller screens */
-  }
-
-  .item-description {
-    font-size: 0.95rem;
+    font-size: 2.8rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .CeriPasqualiContainer {
-    padding: 0 20px;
+  .CeriPasquali {
+    padding-bottom: 300px;
+    padding-top: 0px;
   }
-
   .CeriPasqualiText {
     font-size: 2.5rem;
-  }
-
-  .items-container {
-    gap: 30px; /* Adjust gap between items */
-  }
-
-  .item {
-    width: 250px; /* Adjust width for smaller screens */
-  }
-
-  .item-title {
-    font-size: 1.3rem;
-  }
-
-  .item-description {
-    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
-  .items-container {
-    gap: 20px; /* Slightly smaller gap */
+  .CeriPasquali {
+    padding-bottom: 300px;
+    padding-top: 0px;
   }
-  
   .item {
-    width: 200px;
-    padding: 15px;
+    min-width: 220px;
   }
-  
   .item-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
-  
-  .item-description {
-    font-size: 0.85rem;
+  .item-image {
+    max-width: 250px;
   }
 }
 
 @media (max-width: 480px) {
+  .CeriPasquali {
+    padding-bottom: 300px;
+    padding-top: 0px;
+  }
   .CeriPasqualiText {
     font-size: 2rem;
   }
-  
-  .items-container {
-    gap: 10px;
-  }
-  
   .item {
     width: 100%;
-    padding: 10px;
   }
-  
   .item-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
-
-  .item-description {
-    font-size: 0.8rem;
+  .item-image {
+    max-width: 200px;
   }
 }
