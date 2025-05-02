@@ -18,9 +18,9 @@ export default function Header() {
       <nav className="container">
         <div className="menu-icon" onClick={toggleMenu}>
           {menuOpen ? (
-            <FiX size={30} color={isHeaderVisible ? "#705936" : "#ffffff"} />
+            <FiX size={30} color={isHeaderVisible ? "#f1eee8" : "#705936"} />
           ) : (
-            <FiMenu size={30} color={isHeaderVisible ? "#705936" : "#ffffff"} />
+            <FiMenu size={30} color={isHeaderVisible ? "#705936" : "#f1eee8"} />
           )}
         </div>
         <ul className={`HeaderList ${menuOpen ? "open" : ""}`}>
@@ -75,7 +75,6 @@ export default function Header() {
               isHeaderVisible ? 'hover-white':'hover-brown'
             }`}>APPUNTI</li>
           </a>
-          {/* Repeat for other links */}
         </ul>
       </nav>
       <style jsx>{`

@@ -1,0 +1,48 @@
+.FooterSection {
+    background-color: #c49959;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .FooterSection h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  
+  .FooterSection p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f8f9fa;
+  }
+  
+  .FooterSection a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .FooterSection a:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .FooterSection .col-md-6 {
+      margin-bottom: 30px;
+    }
+  
+    .FooterSection h4 {
+      font-size: 20px;
+    }
+  
+    .FooterSection p {
+      font-size: 16px;
+    }
+  }
+  

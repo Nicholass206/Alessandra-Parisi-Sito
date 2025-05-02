@@ -1,6 +1,6 @@
 .mostreSection {
     /* padding-block: 80px; */
-    background-color: #705936;
+    background-color: #f1eee8;
     height: 120vh;
     padding-bottom: 40px;
     /* scroll-margin-top: -150px; */
@@ -8,19 +8,19 @@
   }
   
   .mostreText {
-    color: #f1eee8;
+    color: #705936;
     font-size: 3rem;
     text-align: center;
   }
   
   .mostreSection h6 {
-    color: #f1eee8;
+    color: #705936;
     font-size: 1.5rem;
     text-align: center;
   }
   
   .mostreSection p {
-    color: #f1eee8;
+    color: #705936;
     font-size: 1rem;
     text-align: center;
   }

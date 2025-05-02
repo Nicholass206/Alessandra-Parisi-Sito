@@ -11,7 +11,7 @@ import SoggetiPerBambini from "../../public/assets/images/bambini.jpg";
 import CeriPasquali from "../data/CeriPasquali.js";
 import Spiritualita from "../../public/assets/images/mostre/Spiritualità e Colori.jpg";
 import LibreriaTraspontina from "../../public/assets/images/mostre/TRSP.ALE.jpg";
-import LibreriaPalermo from "../../public/assets/images/mostre/DSC00700.jpg";
+import LibreriaPalermo from "../../public/assets/images/mostre/IMMAGINE DA INSERIRE PER MOSTRA DI PALERMO-1.png";
 import Bambusa from "../../public/assets/images/mostre/bambusa-img.jpg";
 import Laluce from "../../public/assets/images/mostre/DSC00719.jpg";
 import { Link } from "react-router-dom";
@@ -22,6 +22,7 @@ import "./CeriPasqualiPage.css";
 import "./ColoriInAltreFormePage.css";
 import "./MostrePage.css";
 import "./AppuntiPage.css";
+import "./Footer.css";
 
 export default function HeroPage() {
   return (
@@ -191,7 +192,7 @@ export default function HeroPage() {
           <div className="IconsContainer row">
             <Link to="/Colori/decori" className="col-lg-4 col-4 p-0">
               <img src={Decori} alt="Decori" className="Categories" />
-              <h3 className="CategoryName Rox">Decori</h3>
+              <h3 className="CategoryName Rox">Acquarelli</h3>
             </Link>
             <Link to="/Colori/lampade" className=" col-lg-4 col-4  p-0">
               <img src={Lampade} alt="Decori" className="Categories" />
@@ -277,6 +278,10 @@ export default function HeroPage() {
             seminari; sono pronta a dialogare con chi lo desidera, e ad
             apprendere da chi mi può insegnare.
           </h6>
+          <p className="emailLink">
+            <i className="fas fa-envelope"></i>
+            <a href="mailto:aleparmar@libero.it"> aleparmar@libero.it </a>
+          </p>
         </div>
       </div>
     </div>

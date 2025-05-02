@@ -5,6 +5,10 @@ const coloriInAltreForme = [
     title: "Lampade",
     images: [
       {
+        src: "/assets/images/decori/fate.jpg",
+        title: "Greca su legno",
+      },  
+      {
         src: "/assets/images/lampade/la leggerezza.jpg",
         title: "Leggerezza",
       },
@@ -75,10 +79,6 @@ const coloriInAltreForme = [
       {
         src: "/assets/images/decori/acquarello 2.JPG",
         title: "Acquarello ",
-      },
-      {
-        src: "/assets/images/decori/fate.jpg",
-        title: "Greca su legno",
       },
       {
         src: "/assets/images/decori/acquarello_0004.JPG",

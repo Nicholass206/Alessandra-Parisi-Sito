@@ -36,7 +36,7 @@ const mostre = [
       "Esposizione di icone presso la Libreria Universitas a Palermo 5 dicembre 2009 - 8 gennaio 2010",
     path: "/Mostre/libreria-palermo",
     images: [
-      { src: "/assets/images/mostre/TRSP.ALE.jpg", title: "" },
+      { src: "/assets/images/mostre/IMMAGINE DA INSERIRE PER MOSTRA DI PALERMO-1.png", title: "" },
       // {src:"",title:""},
       // {src:"",title:""},
     ],
