@@ -270,9 +270,9 @@ export default function HeroPage() {
         </div>
       </div>
 
-      <div id="appunti" className="appuntiSection">
+      <div id="contatti" className="appuntiSection">
         <div className="container appuntiContainer">
-          <h2 className="text-center Rox">Appunti</h2>
+          <h2 className="text-center Rox">Contatti</h2>
           <h6 className="text-center Rox">
             Condivido volentieri qualche breve appunto tratto da vari testi e
             seminari; sono pronta a dialogare con chi lo desidera, e ad

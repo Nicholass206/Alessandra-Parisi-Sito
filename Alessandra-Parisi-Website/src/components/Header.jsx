@@ -70,10 +70,10 @@ export default function Header() {
               isHeaderVisible ? 'hover-white': 'hover-brown'
             }`}>MOSTRE</li>
           </a>
-          <a href="#appunti">
+          <a href="#contatti">
             <li className={`HeaderLink ${
               isHeaderVisible ? 'hover-white':'hover-brown'
-            }`}>APPUNTI</li>
+            }`}>CONTATTI</li>
           </a>
         </ul>
       </nav>
