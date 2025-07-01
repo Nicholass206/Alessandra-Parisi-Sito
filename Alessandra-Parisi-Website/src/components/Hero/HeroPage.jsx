@@ -15,6 +15,7 @@ import LibreriaPalermo from "../../../public/assets/images/mostre/IMMAGINE DA IN
 import Bambusa from "../../../public/assets/images/mostre/bambusa-img.jpg";
 import Laluce from "../../../public/assets/images/mostre/DSC00719.jpg";
 import { Link } from "react-router-dom";
+import PageTransition from "../PageTransition/PageTransition";
 import "./HeroPage.css";
 import "../../Pages/ChiSonoPage.css";
 import "../../Pages/GalleriaIconePage.css";
@@ -26,7 +27,8 @@ import "../../Pages/Footer.css";
 
 export default function HeroPage() {
   return (
-    <div>
+    <PageTransition trigger="home">
+      <div>
       <div id="home" className="HeroSection">
         <div className="HeroContainer container">
           <h1 className="Rox">
@@ -285,5 +287,6 @@ export default function HeroPage() {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

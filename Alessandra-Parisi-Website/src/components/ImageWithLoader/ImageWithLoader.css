@@ -1,0 +1,40 @@
+.image-with-loader {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 238, 232, 0.8);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.image-with-loader img.loading {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-with-loader img.loaded {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-error-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: #666;
+  min-height: 200px;
+  border-radius: 4px;
+  font-family: "Roxborough", serif;
+}

@@ -1,0 +1,25 @@
+.page-transition {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.page-transition.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Enhanced hover transitions for links and buttons */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Smooth transitions for images */
+img {
+  transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
