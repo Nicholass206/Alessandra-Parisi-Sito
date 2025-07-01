@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useScrollContext } from "../Pages/ScrollContext";
+import { useScrollContext } from "../../Pages/ScrollContext";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Header.css";
 

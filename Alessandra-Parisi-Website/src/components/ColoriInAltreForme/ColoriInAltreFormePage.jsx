@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import coloriInAltreForme from "../data/ColoriInAltreforme.js";
+import coloriInAltreForme from "../../data/ColoriInAltreforme.js";
 import { SlideshowLightbox } from "lightbox.js-react";
 import './ColoriInAltreFormePage.css';
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import mostre from "../data/Mostre.js";
+import mostre from "../../data/Mostre.js";
 import { SlideshowLightbox } from "lightbox.js-react/SlideshowLightbox";
 import './MostrePage.css';
 

@@ -1,13 +1,13 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Header from './components/Header';
+import Header from '../src/components/Header/Header';
 import './App.css';
-import './Categories.css';
-import HeroPage from './Pages/HeroPage';
-import CategoryPage from './Pages/CategoryPage';
+import '../src/components/Categories/Categories.css';
+import HeroPage from '../src/components/Hero/HeroPage';
+import CategoryPage from '../src/components/Categories/CategoryPage';
 import '../src/fonts/Roxborough.ttf';
 import { ScrollProvider } from '../src/Pages/ScrollContext';
-import ColoriInAltreFormepage from './Pages/ColoriInAltreFormePage';
-import MostrePage from './Pages/MostrePage';
+import ColoriInAltreFormepage from '../src/components/ColoriInAltreForme/ColoriInAltreFormePage';
+import MostrePage from '../src/components/Mostre/MostrePage';
 import { useEffect } from 'react';
 
 function ScrollRestoration() {
