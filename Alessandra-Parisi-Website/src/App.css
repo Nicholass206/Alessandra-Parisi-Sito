@@ -1,9 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   background-color: white;
-
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
+
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure full width on mobile */
+@media (max-width: 768px) {
+  body, html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
+  }
 }
 
 /* Page transition animations */
@@ -74,6 +98,19 @@ body,
   background-repeat: no-repeat;
   background-position-y: -50px ;
   z-index: 2;
+}
+
+/* Mobile hero section fixes */
+@media (max-width: 768px) {
+  .HeroSection {
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
 }
 
 .HeroContainer{

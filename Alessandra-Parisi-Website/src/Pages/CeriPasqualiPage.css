@@ -82,15 +82,25 @@
   .CeriPasquali {
     padding-bottom: 300px;
     padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .items-container {
+    gap: 15px;
   }
   .item {
     min-width: 220px;
+    margin-bottom: 20px;
   }
   .item-title {
     font-size: 1.4rem;
   }
   .item-image {
     max-width: 250px;
+    transition: transform 0.2s ease;
+  }
+  .item-image:hover {
+    transform: scale(1.02);
   }
 }
 
@@ -98,17 +108,27 @@
   .CeriPasquali {
     padding-bottom: 300px;
     padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .CeriPasqualiText {
     font-size: 2rem;
+    padding: 0 10px;
+  }
+  .items-container {
+    flex-direction: column;
+    align-items: center;
   }
   .item {
     width: 100%;
+    max-width: 350px;
+    margin-bottom: 25px;
   }
   .item-title {
     font-size: 1.2rem;
   }
   .item-image {
-    max-width: 200px;
+    max-width: 250px;
+    cursor: pointer;
   }
 }

@@ -64,3 +64,115 @@
     letter-spacing: 1px;
     padding: 0px 10px;
   }
+
+  /* Mobile responsiveness fixes */
+  @media (max-width: 768px) {
+    .HeroSection {
+      height: 100vh;
+      background-position: center center;
+      background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+      background-size: cover;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+    }
+
+    .HeroSection h1 {
+      font-size: 3rem;
+      max-width: 90%;
+      white-space: normal; /* Allow text wrapping on mobile */
+      line-height: 1.2;
+      padding: 0 20px;
+    }
+
+    .HeroContainer {
+      padding: 0 15px;
+      gap: 40px;
+    }
+
+    .HeroContainer span {
+      font-size: 1rem;
+      margin-bottom: 50px;
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .HeroSection {
+      background-position: center center;
+      background-size: cover;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+
+    .HeroSection h1 {
+      font-size: 2.5rem;
+      max-width: 95%;
+    }
+
+    .HeroContainer span {
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Mobile Image Modal Styles */
+  .image-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+  }
+
+  .image-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #705936;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .image-modal-img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .image-modal-title {
+    margin-top: 15px;
+    color: #705936;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+  }

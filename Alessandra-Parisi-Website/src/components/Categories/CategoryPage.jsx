@@ -13,7 +13,6 @@ function CategoryPage() {
 
   useEffect(() => {
     setIsLoading(true);
-    // Simulate loading time for smooth transition
     const timer = setTimeout(() => {
       const foundCategory = categories.find(
         (cat) => cat.path === `/${categoryPath}`

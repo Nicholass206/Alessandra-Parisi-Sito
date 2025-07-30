@@ -79,10 +79,49 @@
 /* Icon image loading states */
 .IconImage {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  max-width: 100%;
+  height: auto;
 }
 
 .IconImage:hover {
   transform: scale(1.02);
+}
+
+/* Mobile responsiveness for gallery */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .IconImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .col-4 {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }
 
 .IconsContainer .col-lg-4:hover .CategoryName {

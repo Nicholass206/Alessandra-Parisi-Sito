@@ -15,6 +15,7 @@ import LibreriaPalermo from "../../../public/assets/images/mostre/IMMAGINE DA IN
 import Bambusa from "../../../public/assets/images/mostre/bambusa-img.jpg";
 import Laluce from "../../../public/assets/images/mostre/DSC00719.jpg";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import PageTransition from "../PageTransition/PageTransition";
 import "./HeroPage.css";
 import "../../Pages/ChiSonoPage.css";
@@ -26,6 +27,27 @@ import "../Appunti/AppuntiPage.css";
 import "../../Pages/Footer.css";
 
 export default function HeroPage() {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  // Check if device is mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const openImageModal = (image) => {
+    if (isMobile) {
+      setSelectedImage(image);
+    }
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
   return (
     <PageTransition trigger="home">
       <div>
@@ -169,7 +191,13 @@ export default function HeroPage() {
                 className="item col-4 d-flex flex-column align-items-center"
               >
                 <h3 className="item-title Rox text-center">{item.title}</h3>
-                <img src={item.image} alt={item.title} className="item-image" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="item-image"
+                  onClick={() => openImageModal(item)}
+                  style={{ cursor: isMobile ? 'pointer' : 'default' }}
+                />
               </div>
             ))}
           </div>
@@ -286,6 +314,26 @@ export default function HeroPage() {
           </p>
         </div>
       </div>
+
+      {/* Mobile Image Modal */}
+      {selectedImage && (
+        <div
+          className="image-modal-overlay"
+          onClick={closeImageModal}
+        >
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="image-modal-close" onClick={closeImageModal}>
+              ×
+            </button>
+            <img
+              src={selectedImage.image}
+              alt={selectedImage.title}
+              className="image-modal-img"
+            />
+            <h3 className="image-modal-title">{selectedImage.title}</h3>
+          </div>
+        </div>
+      )}
     </div>
     </PageTransition>
   );
