@@ -64,6 +64,26 @@ const mostre = [
       { src: "/assets/images/mostre/MOSTRA SAN SATURNINO 076.JPG", title: "" },
     ],
   },
+   {
+    id: 6,
+    title: "Esternazioni a Galleria Vittoria - La Dea Bendata",
+    description: "Dal 29 Aprile al 9 Maggio 2025",
+    path: "/Mostre/galleria-vittoria",
+    images: [
+      { src: "/assets/images/mostre/galleria-vittoria.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria1.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria2.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria3.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria4.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria5.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria6.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria7.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria8.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria9.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria10.jpg", title: "" },
+      { src: "/assets/images/mostre/galleria-vittoria11.jpg", title: "" },
+    ],
+  },
 ];
 
 export default mostre;

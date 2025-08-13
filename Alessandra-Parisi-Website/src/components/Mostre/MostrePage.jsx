@@ -13,7 +13,6 @@ function MostrePage() {
 
   useEffect(() => {
     setIsLoading(true);
-    // Simulate loading time for smooth transition
     const timer = setTimeout(() => {
       const foundMostre = mostre.find(
         (mos) => mos.path === `/Mostre/${mostrePath}`

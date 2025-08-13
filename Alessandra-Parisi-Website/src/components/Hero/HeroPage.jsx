@@ -14,6 +14,7 @@ import LibreriaTraspontina from "../../../public/assets/images/mostre/TRSP.ALE.j
 import LibreriaPalermo from "../../../public/assets/images/mostre/IMMAGINE DA INSERIRE PER MOSTRA DI PALERMO-1.png";
 import Bambusa from "../../../public/assets/images/mostre/bambusa-img.jpg";
 import Laluce from "../../../public/assets/images/mostre/DSC00719.jpg";
+import GalleriaVittoria from "../../../public/assets/images/mostre/galleria-vittoria.jpg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import PageTransition from "../PageTransition/PageTransition";
@@ -295,6 +296,12 @@ export default function HeroPage() {
                 <img src={Laluce} alt="La Luce" className="Categories" />
               </Link>
               <p className="text-center Rox">La Luce</p>
+            </div>
+            <div className="col-lg-4 col-3">
+              <Link to="/Mostre/galleria-vittoria" className="p-0">
+                <img src={GalleriaVittoria} alt="Galleria Vittoria" className="Categories" />
+              </Link>
+              <p className="text-center Rox">Galleria Vittoria</p>
             </div>
           </div>
         </div>

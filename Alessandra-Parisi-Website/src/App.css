@@ -8,6 +8,7 @@ body{
   padding: 0;
   overflow-x: hidden;
   width: 100%;
+  position: relative;
 }
 
 html{
@@ -16,17 +17,62 @@ html{
   width: 100%;
 }
 
-/* Ensure full width on mobile */
+/* Unified Responsive System */
+/* Ensure full width and prevent horizontal scroll */
+body, html {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Responsive breakpoints - Mobile First */
+@media (max-width: 480px) {
+  .container, .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   body, html {
     width: 100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
     width: 100vw;
+    max-width: 100vw;
+  }
+
+  /* Force hero section to full viewport width */
+  .HeroSection {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Override Bootstrap container constraints for hero */
+  .HeroSection .container {
+    max-width: none !important;
+    width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -100,6 +146,22 @@ body,
   z-index: 2;
 }
 
+/* Section separation fixes */
+.coloriInAltreFormeSection,
+.mostreSection {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.coloriInAltreFormeSection {
+  border-bottom: none;
+}
+
+.mostreSection {
+  border-top: none;
+}
+
 /* Mobile hero section fixes */
 @media (max-width: 768px) {
   .HeroSection {
@@ -108,8 +170,22 @@ body,
     background-position: center center;
     background-size: cover;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  /* Ensure proper section stacking on mobile */
+  .coloriInAltreFormeSection,
+  .mostreSection {
+    position: relative;
+    z-index: auto;
+    display: block;
+    width: 100%;
   }
 }
 
