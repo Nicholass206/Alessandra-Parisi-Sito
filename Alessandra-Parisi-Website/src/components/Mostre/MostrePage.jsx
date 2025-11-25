@@ -66,6 +66,27 @@ function MostrePage() {
               ))}
             </SlideshowLightbox>
           </div>
+
+          {Mostre.relatedLinks && Mostre.relatedLinks.length > 0 && (
+            <div className="related-links-section">
+              <h2 className="Rox text-center">Link e Blog Correlati</h2>
+              <div className="related-links-container">
+                {Mostre.relatedLinks.map((link, index) => (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="related-link-card"
+                    key={index}
+                  >
+                    <h3 className="related-link-title">{link.title}</h3>
+                    <p className="related-link-description">{link.description}</p>
+                    <span className="related-link-arrow">→</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </PageTransition>
